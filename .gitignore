@@ -1,0 +1,4 @@
+# Ignore all compiled files
+*.class
+*.o
+*.exe
