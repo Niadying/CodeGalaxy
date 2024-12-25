@@ -2,9 +2,9 @@
 #include <string>
 using namespace std;
 
-class strudents
+class students
 {
-
+    public:
     // these are the properties
     string name;
     string department;
@@ -25,10 +25,21 @@ class strudents
 };
 
 
-/// @brief 
-/// @return 
+
 int main()
 {
+    students s007;
+    s007.name="abhishek singh";
+    s007.department= "CSE Core I";
+    s007.councellor= "rahul chaurasia";
+    s007.dues=0000;
+
+    cout<< "the name of the student is "<<s007.name<< " adn the deaprt is "<< s007.department<<endl;
+
+
+
+
+
 
     return 0;
 }
