@@ -5,7 +5,7 @@ int main(){
     int works[12];
 
     for(int i = 0; i < 12; i++){
-        scanf("%d", works[i]);
+        scanf("%d", &works[i]);
     }
 
     for(int i = 0; i < 12; i++){
