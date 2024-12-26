@@ -10,5 +10,4 @@ int main (){
         // arr[6]=9;
         // arr[7]=10;
         cout<<arr.size()<<endl;
-
 }
