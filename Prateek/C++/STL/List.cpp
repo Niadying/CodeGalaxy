@@ -15,7 +15,7 @@ int main (){
     l.push_back(7);
     l.push_front(8);
     list<int>f(l);
-       for(int i : f){
+        for(int i : f){
         cout<<i<<" ";
     }
     cout<<endl;
