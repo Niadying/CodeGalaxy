@@ -4,7 +4,7 @@ using namespace std;
 
 int main (){
 
-    list<int>l;
+    list<int>l;  // CAN'T GET ELEMENT DIRECT AT ANY POSITION USING AT OPERATOR, WE NEED TO TRAVEL..
     list<int>n(5,9999);
     for(int i:n){
         cout<<i<<" ";

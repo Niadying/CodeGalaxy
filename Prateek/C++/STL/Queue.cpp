@@ -15,4 +15,6 @@ int main (){
     q.pop();
     cout<<q.front()<<endl;
 
+    // ALL COMPLEXITIES ARE O(1)..
+
 }
