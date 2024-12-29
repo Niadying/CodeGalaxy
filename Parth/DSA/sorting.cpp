@@ -71,5 +71,6 @@ int main()
     {
         cout<< arr[i]<< endl;
     }
+    cout<<"new change"<<endl;
     return 0;
 }
