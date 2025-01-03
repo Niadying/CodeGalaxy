@@ -44,20 +44,83 @@
 #include <iostream>
 #include <utility>
 #include<vector>
+#include<list>
+#include<deque>
+#include<stack>
+#include<queue>
 
 using namespace std;
 
-void explainvector()
-{
-      vector<int> v;
+// void explainvector()
+// {
+//       vector<int> v;
 
-      v.push_back(1);
-      v.push_back(2);
+//       v.push_back(1);
+//       v.emplace_back(2);
+//       v.emplace_back(5);
 
-      cout<< v[1]<< endl;
+//       cout<< v[1]<< endl;
+
+//       for(auto it : v){
+//         cout<<it<<" ";
+
+       
+//       }
+//       cout<<endl;
+//        v.erase(v.begin()+1);
+//        for(auto it : v){
+//         cout<<it<<" ";
+
+       
+//       }
+
+// }
+
+// void explainlist()
+// {
+//     list<int> ls;
+//     ls.push_back(1);
+//     ls.emplace_back(5);
+//     ls.push_front(3);
+    
+// }
+// void explaindeque()
+// {
+//     deque<int> dq;
+//     //rest are same as vector
+// }
+// void explainstack(){
+//     stack<int> st;
+//     st.push(1);
+//     st.push(2);
+//     st.push(3);
+
+//     cout << st.top()<<endl;;
+//     st.pop();
+//     cout <<st.top();
+
+void explainqueue(){
+    queue<int> q;
+    q.push(1);
+    q.push(2);
+    q.emplace(4);
+
+    q.back() +=5;
+    cout<<q.back();
+
 }
+
+void explainPQ()
+{
+    priority_queue<int> pq;
+
+}
+
+
+
 
 int main()
 {
-    explainvector();
+    explainqueue(); 
+    return 0;
 }
