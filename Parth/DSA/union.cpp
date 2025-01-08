@@ -76,7 +76,8 @@ int main(){
     }
     return 0;
 
-
+//tc O(n1+n2)
+//SC O(1)
 
 }
 
