@@ -116,8 +116,41 @@
             <br><br><br><br><br>
         </form>
         <form >
+            <!-- Text area -->
             <div>
-                <input type="text" placeholder="Enter username" required autofocus >
+                <textarea rows="20" cols="50" required >Hello World</textarea> <!-- All other attributes can be used except value attribute-->
+                <!-- <input type="submit" value="Submit Form"> -->
+                <input type="image" src="https://t3.ftcdn.net/jpg/00/30/01/62/360_F_30016272_EbkpRNb3vCs37lPpwTcv2RWM7FkTHxoM.jpg" height="50" width="100">
+
+            </div>
+
+            <div>
+                <!-- Drop Down form -->
+                <select> <!-- Use size option to see number of options on screen, Use multiple to select multiple options-->
+                    <optgroup label="Cars">
+                        <option>Audi</option> <!-- Use selected attribute to select anything by default -->
+                        <option selected>BMW</option>
+                        <option>Tata</option>
+                    </optgroup> 
+                    <optgroup label="Sports">
+                        <option>Cricket</option>
+                        <option>Hockey</option>
+                        <option>Football</option>
+                    </optgroup> 
+                </select>
+            </div>
+
+            <div>
+                <input type="radio" value="Kuch bhi " checked name="gender">Male <!-- Name should be same to choose only a single option and should be different to choose multiple options-->
+                <input type="radio" value="de skte" name="gender">Female <!-- Use checked attribute to select an option by default-->
+                <input type="radio" value="Ho" name="gender">Other
+            </div>
+
+
+            <div>
+                <input type="checkbox" name="sports">Cricket <!-- Instead of same name you can select multiple options-->
+                <input type="checkbox" name="sports">Hockey
+                <input type="checkbox" name="sports">Football
             </div>
         </form>
     </body>
