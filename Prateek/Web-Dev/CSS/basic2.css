@@ -1,0 +1,243 @@
+/* TEXT  */ 
+
+
+
+
+img{
+    border:3px solid red;
+    vertical-align: middle ;
+}
+#txt{
+    width: 500px;
+    border:2px solid black;
+    color:blueviolet; /*GIVING COLOR TO TEXT*/
+    /* ALLIGN TEXT  */
+    text-align: left;
+    text-align: right;
+    text-align: center;
+    text-align: justify;
+
+    /* DIRECTION  */
+    /* direction: rtl; */
+
+    /* TEXT DECORATION  */
+    /* text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through; */
+
+    /* TEXT TRANSFORMATION */
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+
+    /* LINE HEIGHT */
+    line-height: 30px;
+
+    /* TEXT INDENT  */
+    text-indent: 60px;
+
+    /* LETTER SPACING  */
+    /* letter-spacing: 2px; */
+
+    /* WORD SPACING  */
+    word-spacing: 7px;
+
+    /* WHITESPACE  */
+    /* white-space: nowrap; */
+
+    /* WORDWRAP  */
+    word-wrap: break-word;
+
+    /* WRITING MODE  */
+    /* writing-mode: vertical-lr; */
+
+    /* SHADOW  */
+    text-shadow: 5px 10px 5px gray;
+}
+
+
+
+
+
+
+/* LINK  */
+
+
+/* THERE ARE 4 STATES OF LINKS 1.LINK (initial) 2.VISITED (visited atleast once) 3.HOVER (when cursor is placed) 4.ACTIVE (when you hold you click) */
+
+a{
+    text-decoration: none; /* REMOVES UNDERLINE*/
+}
+
+/* ALWAYS STYLE IN THIS ORDER ONLY  */
+
+a:link{
+    color:red;
+    font-size: 10px;
+}
+a:visited{
+    color: blue;
+    font-size:20px;
+}
+a:hover{
+    color:green;
+    font-size:30px;
+}
+a:active{
+    color:yellow;
+    font-size:40px;
+}
+
+
+
+
+
+/* FONTS  */
+
+    /* USE DOWNLOADED FONT --> BEFORE USING IT DEFINE IT AND GIVE IT A NAME YOU WILL USE FURTHER AND THEN GIVE IT SOURCE   */
+
+   /* FONT KA NAME AGR EK WORD SE JYDA HAI TOH DOUBLE QUOTE MAI DENA HOGA (" ")  */
+@font-face{
+    font-family: "Prateeek Sahu"; 
+    src: url('Images/DripOctober-vm0JA.ttf');
+}
+
+h1{
+
+    /* GETTING FROM GOOGLE FONTS  */
+    font-family: "Playwrite AU SA", serif;
+
+    /* USING DOWNLOADED FONT  */
+    font-family:"Prateeek Sahu";
+
+    /* GIVING EXTRA FONTS  */
+    font-family: "Prateeek Sahu", "Poppins", serif ;  /* TI WILL USE ABC FIRST AND BY ANY CHANCE IT IS UNAVALIABE DUE TO ANY ISSUE NEXT WOULD BE USED AND SAME FOLLOWS */
+}
+
+p{
+
+     /* GETTING FROM GOOGLE FONTS  */
+    font-family: "Prateeek Sahu" , "Poppins", serif;
+    font-weight: 500;
+
+    /* FONT SIZE  */
+    /* font-size: 25px; */
+
+    /* FONT WEIGHT  */
+    /* font-weight: bold; */
+
+    /* FONT STYLE  */
+    /* font-style: italic; */
+
+    /* FONT VARIENT  */
+    /* font-variant: small-caps; */
+}
+
+
+/* CSS UNITS  */
+
+html{
+    font-size: 14px;
+}
+
+#parent{
+    width:600px;
+    border: 1px solid red;
+    width: 50vw;
+    height: 20vw; /* IT WILL BE WITH RESPECT TO BROWSER. IF SCREEN IS INCRESED WIDTH AND HEIGHT WILL ALSO INCREASE AND VICE VERSA */
+    font-size:20px;
+    font-size: 4rem; /* SIZE WOULD BE (14*4)Px AS IT TAKES SIZE OF HTML*/
+    /*WE CAN DO IN VW AS WELL AS WE DID WITH WIDTH*/
+}
+
+#child{
+    border:1px solid blue;
+    width:50%;  /*PERCENTAGE IS RELATED TO IT'S PARENT */
+    font-size: 0.6em;  /* IT'S SIZE WOULD BE (0.6*20)Px AS PARENT SIZE IS 20Px*/
+    font-size: 2rem;  /*IT'S SIZE WOULD BE (2*14)Px AS IT TAKES SIZE OF HTML */
+}
+
+
+
+/* CURSOR */
+
+#child{
+    cursor: grab; /*YOU CAN GOOGLE IT AND TRY IT*/
+    cursor: wait;
+}
+
+
+/* IMPORTANT  */
+#child{
+    border: 3px dashed green !important;  /*NOW IT WON'T SEE ANY PRIORITY. IT WILL APPLY THIS PROPERTY*/
+}
+
+/* BOX SHADOW  */
+#child{
+    margin: 50px;
+    padding: 20px;
+    background-color: yellow;
+    box-shadow: 10px 10px 6px 2px grey inset; /* X AXIS, Y AXIS, BLUR, KITNA FALEGA, COLOR(AGR SHADOW ANDAR CHAIIYE TO INSET USE KRO)*/
+    box-shadow: 10px 10px 6px 2px grey, -10px -10px 6px 2px red; /*WE CAN GIVE TWO SHADOWS AS WELL*/
+}
+
+
+/* OPACITY  */
+#opacity{
+    height: 200px;
+    width: 300px;
+    background-color: green;
+    margin-top: 30px;
+    opacity: 0.7;  /*VALUE OF OPACITY IS B/W  0-1  */
+}
+img{    /*NORMALLY GIVING OPACITY TO IMAGE*/
+    border: 2px dashed blue;
+    /* opacity: .6; */
+}
+
+/* img:hover{
+    opacity: .6;  GIVING OPACITY WHEN HOVERED TO IMAGE
+} */
+
+
+/* FILTER */
+#filter{
+    filter:blur(2px);   
+    filter: brightness(40%);
+    filter:contrast(60%);
+    filter:drop-shadow(10px 5px 6px red); /*SAME AS BOX SHADOW (X-AXIS, Y-AXIS, BLUR, COLOUR)*/
+    filter:grayscale(100%); /*USED FOR DOING BLACK AND WHITE IMAGE*/
+    filter:hue-rotate(90deg);
+    filter:invert(80%);
+    filter:opacity(30%);
+    filter:saturate(80%);
+    filter:sepia(30%);
+
+    /* TO GIVE MORE THAN ONE PROPERTY DO THIS BY USING COMMAS  */
+    filter: opacity(20%), brightness(10%) ,grayscale(40%);
+}
+
+
+
+
+/* IMAGE SPRITE  */
+
+#sprite{
+    height: 78px;
+    background-image: url('Images/imagesprites.jpg');
+    background-repeat: no-repeat;
+    background-position: 0px -78px;
+    background-position: 0px -156px;
+}
+
+
+/* GRADIENT  */
+
+#gradient{
+    margin-top: 20px;
+    height:500px;
+    border: 2px dashed green;
+    background-image: linear-gradient( to right, green, blue, red); /*WE CAN GIVE LIKE TO RIGHT TOP OR IN DEGREES ALSO*/
+    background-image: radial-gradient( circle,green 10%, blue 20%, red 30%, yellow 20%, black); /*BY DEFAULT IT IS ELLIPSE BUT YOU CAN GET IT IN CIRCLE AS WELL*/
+    /* WE CAN ALSO GIVE HOW MANY % AREA COLOR WILL OCCUPY, GIVE PERCENTAGE GIVING SPACE AFTER NAME OF COLOUR  */
+}
