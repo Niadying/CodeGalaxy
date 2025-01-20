@@ -238,7 +238,7 @@ img{    /*NORMALLY GIVING OPACITY TO IMAGE*/
     height:500px;
     border: 2px dashed green;
     background-image: linear-gradient( to right, green, blue, red); /*WE CAN GIVE LIKE TO RIGHT TOP OR IN DEGREES ALSO*/
-    background-image: radial-gradient( circle,green 10%, blue 20%, red 30%, yellow 20%, black); /*BY DEFAULT IT IS ELLIPSE BUT YOU CAN GET IT IN CIRCLE AS WELL*/
+    background-image: radial-gradient( circle,green 10%, blue 20%, red 30%, yellow 20%, black); /*BY DEFAULT IT IS ELLIPSE BUT YOU CAN GET IT IN CIRCLE AS WELL */
     /* WE CAN ALSO GIVE HOW MANY % AREA COLOR WILL OCCUPY, GIVE PERCENTAGE GIVING SPACE AFTER NAME OF COLOUR  */
 }
 
@@ -272,7 +272,7 @@ textarea{
 
 
 
-/* LSIT  */
+/* LIST  */
 
 
 ul{
@@ -303,5 +303,36 @@ li{
 /* TABLES  */
 
 table{
-    border: 2px dashed red;
+    border:1px solid black;
+    border-collapse: collapse;
+    /*IF BORDER COLLAPSE IS OFF, THEN WE CAN GIVE SAPCE BETWEEN BIRDER BY BORDER SPACING */
+    /* border-collapse: separate; */
+    /* border-spacing: 20px; */
+    empty-cells: hide;
+    table-layout: fixed; /*TRIES TO DIVIDE EQUALLY AND WIDTH NEEDS TO BE GIVE*/
+    table-layout: auto; /*RECOMMENDED (NO NEED TO GIVE WIDTH) ANALYZES AND THEN GIVE BEST POSSIBLE OUTCOME*/
+    width:100%;
+
+}
+caption{
+    border:1px solid black;
+    caption-side: bottom;
+    font-size: medium;
+}
+tr{
+    border: 1px solid black;  /*TR DOESN'T TAKE BORDER/ANY PROPERTY*/
+}
+td{
+    border:1px solid black;
+    height: 50px;
+    padding: 20px; /*WE CAN GIVE PADDIGN/ ALIGN TEXT/ VERTICALLY ALIGN TEXT*/
+    text-align: center;
+    vertical-align: middle;
+}
+th{
+    border:1px solid black;  /* BORDERS ALG ALG BLOCK KI TARAH FORM HO JAYEGI */
+    height: 50px;
+    padding:10px;
+    width: 100px;
+    text-align: center;
 }

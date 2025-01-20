@@ -1,0 +1,48 @@
+/* FUNCTION  */
+/* FUNCTIONS : WE HAD USED SEVERAL FUNCTIONS LIKE rgb(), rgba(), url(), ()-> THIS IS SIGN THAT U ARE USING FUNCTION  */
+
+
+
+/* CREATING A VARIABLE FUNCTION  */
+:root{
+    --backgroundclr: green;
+    --fontcolor: blue;
+}
+
+#functions{
+    height: 300px;
+    background-color: aqua;
+    width: 70%; /*ONLY 30% WIDTH AVILABLE FOR OTHER PURPOSE IF WE RESIZE THE BROWSER  */
+    width: calc(100% - 250px); /*ALWAUS 250px WILL BE AVAILABLE IF WE RESIZE THE BROWSER (USING CALC FUNCTION) */
+}
+
+/* a{
+    text-decoration: none;
+    margin:30px;
+    padding: 15px;
+    background-color: red;
+    color:black;
+    color:var(--fontcolor);
+    background-color: var(--backgroundclr); WE HAD TO CHANGE IN ROOT AND THEN IT WILL TAKE PLACE EVERYWHERE 
+} */
+
+
+
+/* BOX SIZING */
+
+
+#div1{
+    background-color: red;
+    height: 150px;
+    width: 300px;
+}
+
+#div2{
+    background-color: blue;
+    height: 150px;
+    width: 300px;
+    padding: 50px;
+    border:5px solid black;
+    box-sizing: content-box; /* HEIGHT AND WIDTH WE HAVE GIVEN IS GONE TO CONTENT AND PADDING AND BORDER WILL TAKE EXTRA SPACE*/
+    box-sizing: border-box; /* HEIGHT AND WIDTH IS GIVEN TO BOX, CONTENT WILL BE COMPROMISED */
+}
