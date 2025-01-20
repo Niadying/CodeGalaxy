@@ -241,3 +241,67 @@ img{    /*NORMALLY GIVING OPACITY TO IMAGE*/
     background-image: radial-gradient( circle,green 10%, blue 20%, red 30%, yellow 20%, black); /*BY DEFAULT IT IS ELLIPSE BUT YOU CAN GET IT IN CIRCLE AS WELL*/
     /* WE CAN ALSO GIVE HOW MANY % AREA COLOR WILL OCCUPY, GIVE PERCENTAGE GIVING SPACE AFTER NAME OF COLOUR  */
 }
+
+
+/* OVERFLOW  */
+
+
+#overflow{
+
+    /* only applicable in block element  */
+
+    border: 2px dashed red;
+    height: 300px;
+    width:500px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+
+    overflow:auto; /*YE KHUD CONTENT DEKH K DECIDE KAREGA KI SCROLL LAGANA HAI YA NHI*/
+}
+
+
+/* RESIZEABLE  */
+
+textarea{
+    resize: none; /*IT WILL DENY US TO CHANGE HEIGHT AND WIDTH*/
+}
+#overflow{
+    resize: both;  /*IT WILL ALLOW US TO INCREASE OR DECREASE ITS HEIGHT AND WIDTH*/
+    /*WE CAN DO THIS IN ANY DIR. LIKE HORIZONTAL AND VERTICAL. CAN ONLY BE DONE IN BLOCK ELEMENT AND OVERFLOW SHOULDN'T BE VISIBLE*/
+}
+
+
+
+/* LSIT  */
+
+
+ul{
+    list-style-type: none;
+    list-style-type: disc;
+    list-style-type: square;
+    list-style-type: circle;
+
+    list-style-position: inside; /*WE CAN SET WHEATHER NUMBERING IS INSIDE OF LIST OR OUTSIDE*/
+}
+
+ol{
+    list-style-type: upper-alpha;
+    list-style-type: lower-greek;
+    list-style-type: upper-roman;
+    list-style-type: decimal; /*WILL PUT DECIMAL AFTER 1*/
+    list-style-type: decimal-leading-zero; /* IT WILL BE LIKE 01. 02. 03. ETC..*/
+
+    /* list-style-image: url('Images/favicon-96x96.png'); WE CAN ADD IMAGES IN PLACE ON 1,2,3 */
+}
+
+li{
+    border:1px solid red;
+}
+
+
+
+/* TABLES  */
+
+table{
+    border: 2px dashed red;
+}
