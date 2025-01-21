@@ -1,14 +1,111 @@
 <!DOCTYPE html>
 <html>
+
+
     <head>
         <title>Youtube.com clone</title>
         <style>
             .thumbnail{
+                margin-top: 5px;
                 width: 389px;
+                border-radius: 10px;
+                display: block;
             }
+
+            .search-bar{
+                font-size: 20px;
+                border-radius: 100px;
+                display: block;
+            }
+            
+            .title{
+                width :389px;
+                margin-top: 0;
+            }
+
+            .preview{
+                width: 389px;
+                display: inline-block;
+                margin-right: 15px;
+
+            }
+
+            .channel-picture{
+                display: inline-block;
+                width: 50px;
+                vertical-align: top;
+            }
+            .video-info{
+                display: inline-block;
+                width: 200px;
+            }
+            .pfp1{
+                width: 40px;
+                border-radius: 40px;
+            }
+            .thumbnail-row{
+                margin-bottom: 12px;
+            }
+
+           
         </style>
     </head>
+
+
+
+
+
+
+
     <body>
-        <img class = "thumbnail"src="thumbnails/hq720.avif">
+        <input class="search-bar" type="text" placeholder="Search">
+        
+        <div class="preview">
+            <div class="thumbnail-row">
+                <img class = "thumbnail"src="thumbnails/hq720.avif">
+            </div>
+
+            <div>
+                <div class="channel-picture">
+                    <img class="pfp1" src="thumbnails/channels4_profile.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="title">
+                        Kulosa edit song-slowed up
+                    </p>
+                    <p class="author">
+                        Danish Zehen
+                    </p>
+                    <p class="stats">
+                        13M views &#183; 2 years ago 
+                    </p>
+            
+                </div>
+               
+                
+            </div>
+
+        
+           
+       
+        
+        </div>
+
+        <div class="preview">
+            <img class = "thumbnail"src="thumbnails/hq721.avif">
+       
+        <p class="title">
+            5 Secrets to Make 2025 the Best Year of Your Life! 🔥
+        </p>
+        <p class="author">
+            Tharun Speaks
+        </p>
+        <p class="stats">
+            54K views &#183; 8 hours ago 
+        </p>
+
+        </div>
     </body>
+
+
 </html>
