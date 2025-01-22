@@ -119,54 +119,126 @@
 
 // SPIRAL PRINT
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main(){
-    int arr[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+// int main(){
+//     int arr[3][3]={{1,2,3},{4,5,6},{7,8,9}};
 
-    int row = 3; 
-    int col = 3;
-    int startRow = 0;
-    int startCol = 0;
-    int endRow = 2;
-    int endCol = 2; 
-    int total = row*col;
-    int count = 0;  
+//     int row = 3; 
+//     int col = 3;
+//     int startRow = 0;
+//     int startCol = 0;
+//     int endRow = 2;
+//     int endCol = 2; 
+//     int total = row*col;
+//     int count = 0;  
 
-    while(total > count){
+//     while(total > count){
 
-        // printing 1st row
-        for(int index = startCol;total > count &&  index<=endCol; index++){
-            cout<<arr[startRow][index]<<" ";
-            count++;
-        }
-        startRow++;
+//         // printing 1st row
+//         for(int index = startCol;total > count &&  index<=endCol; index++){
+//             cout<<arr[startRow][index]<<" ";
+//             count++;
+//         }
+//         startRow++;
         
-        // printing last col
+//         // printing last col
 
-        for(int index = startRow;total > count &&  index<=endRow; index++){
-            cout<<arr[index][endCol]<<" ";
-            count++;
-        }
-        endCol--;
+//         for(int index = startRow;total > count &&  index<=endRow; index++){
+//             cout<<arr[index][endCol]<<" ";
+//             count++;
+//         }
+//         endCol--;
 
-        // printing last row
+//         // printing last row
 
-        for(int index = endCol;total > count &&  index>=startCol; index--){
-            cout<<arr[endRow][index]<<" ";
-            count++;
-        }
-        endRow--;
+//         for(int index = endCol;total > count &&  index>=startCol; index--){
+//             cout<<arr[endRow][index]<<" ";
+//             count++;
+//         }
+//         endRow--;
 
-        // printing 1st col
+//         // printing 1st col
 
-        for(int index = endRow;total > count &&  index>=startRow; index--){
-            cout<<arr[index][startCol]<<" ";
-            count++;
-        }
-        startCol++;
-    }
+//         for(int index = endRow;total > count &&  index>=startRow; index--){
+//             cout<<arr[index][startCol]<<" ";
+//             count++;
+//         }
+//         startCol++;
+//     }
 
     
+// }
+
+
+// ROTATE MATRIX BY 90 DEGREE
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int main (){
+//     int arr[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+
+    
+//     // transpose
+
+//     for(int i = 0 ; i<3; i++){
+//         for(int j =0  ;j<i ; j++){
+//             swap(arr[i][j], arr[j][i]);
+//         }
+//     }
+
+    
+//     // reverse 
+
+//     for(int i  =0; i<3; i++){
+//             int s = 0 , e = 2;
+//         while(s<=e){
+//             swap(arr[i][s++],arr[i][e--]);
+//         }
+//     }
+
+   
+
+//     for(int i = 0; i<3; i++){
+//         for(int j = 0; j<3; j++){
+//             cout<<arr[i][j];
+//         }
+//         cout<<endl;
+//     }
+// }
+
+
+
+
+// BINARY SEARCH IN 2D ARRAY 
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main (){
+    int arr[3][3]={1,2,3,4,5,6,7,8,9};
+    int col = 3;
+    int s = 0;
+    int e = (3*3)-1;
+    int target = 6;
+
+    while(s<=e){
+        int mid = s - (s-e)/2;
+        int element = arr[mid/col][mid%col];
+
+        if(element == target ){
+            cout<<"Found at "<<mid/col<<" "<<mid%col;
+            break;
+        }
+
+        else if(element<target){
+            s = mid + 1 ;
+        }
+        else{
+            e = mid - 1;
+        }
+    }
 }
