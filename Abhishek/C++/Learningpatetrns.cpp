@@ -85,7 +85,14 @@ void print10(int a){
     }
 }
 
-
+//here we have till the patrterns 
+// *
+// **
+// ***
+// ****
+// ***
+// **
+// *
 
 
 
