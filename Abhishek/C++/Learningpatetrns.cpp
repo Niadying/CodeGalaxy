@@ -55,11 +55,30 @@ void print6(int a){
     cout<<endl;
     }
 }
+
+void print7(int a){
+    for (int i=0;i<a;i++){
+
+        for(int j =0;j<i;j++){
+            cout<<" ";
+        }
+        for(int k=2*a-2*i-1;k>0;k--){
+            cout<<"*";
+        }
+        cout<<endl;
+
+    }
+}
+
+
+
+
+
+
+
+
 int main (){
     int dig=7;
-    print2(dig);
-    print3(dig);
-    print4(dig);
-    print5(dig);
-    print6(dig);
+    print7(dig);
+    
 }
