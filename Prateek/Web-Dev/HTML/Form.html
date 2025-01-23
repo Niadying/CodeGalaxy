@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            This is a html page.
+        </title>
+    </head>
+    
+    <body>
+        <!-- forms -->
+        <!-- <form method="get" > 
+
+            INPUT TYPE
+
+             We can get i/p by Method attribute (GET/POST) (backend dev)by default it is get method And same for action attribute (backend dev)
+            <div>
+                Text:
+                <input type="text"> <br><br>
+            </div>
+
+            <div>
+                Colour:
+                <input type="color"><br><br>
+            </div>
+
+            <div>
+                Date:
+                <input type="date"> <br>
+            </div>
+
+            <div>
+                Email:
+                <input type="email">
+            </div>
+
+            <div>
+                <br>
+                <input type="submit" value="Submit Form">
+            </div>
+
+            <div>
+                <br>
+                Hidden:
+                <input type="hidden" value="Sahawan">  Value is not shown to user it is for dev only 
+            </div>
+
+            <div>
+                <br>
+                Number:
+                <input type="number">
+            </div>
+
+            <div>
+                <br>
+                Password:
+                <input type="password">
+            </div>
+
+            <div>
+                <br>
+                Reset:
+                <input type="reset">
+            </div>
+
+            <div>
+                <br>
+                Time:
+                <input type="time">
+            </div>
+
+            <div>
+                <br>
+                Number:
+                <input type="number">
+            </div>
+
+             <div>
+                <br>
+                URL:
+                <input type="url">
+            </div>
+
+            <div>
+                <br>
+                Range:
+                <input type="range">
+            </div> 
+        </form> -->
+
+        <!-- FILE UPLOAD IN HTML 
+        <form enctype="multipart/form-data">
+
+            Select file:
+            <input type="file" multiple>
+        </form>
+            -->
+
+            <!-- INPUT ATTRIBUTE -->
+
+        <form>
+
+            <input type="text" value="Enter username" readonly> <!-- Value means kya pehle se fill hai-->
+            <input type="submit" value="Submit form"> <!-- Read only means can't edit it-->
+            <input type="text" value="Enter username" disabled> <!-- Disabled fades out the content and you can't edit it as well-->
+            <input type="text" value="Enter username" size="10"><!-- It tells this many text will be visible to you. You can enter any no. of characters-->
+            <input type="text" value="Enter username" maxlength="10" size="29"><!-- Max length will show Maximum no. of characters which can be inputted-->
+            <input type="number" min="18" max="200"> <!-- Max and min value which can be given by user (can be used in number range and date)-->
+            <input type="text" placeholder="Enter username"> <!-- Used to give hint to user-->
+            <input type="text" placeholder="Enter username" required> <!-- You need to fill out this if u want to proceed-->
+            <input type="number" step="4"> <!--  step-> Ek baar mai arrow button se kitna badhana hai ya ghatana hai-->
+            <input type="text" placeholder="Enter username" autofocus> <!-- After refreshing it will place courser automatically to it -->
+
+            <input type="text" placeholder="Enter username" autocomplete="on"> <!-- If you submit form once it will give you hints (off kiya toh non hints, on kiya toh hints, by default it is on )--> 
+            <input type="text" placeholder="Enter username" name="First_Name"><!-- Used in backend to know which data is of what type-->
+
+            <br><br><br><br><br>
+        </form>
+        <form >
+            <!-- Text area -->
+            <div>
+                <textarea rows="20" cols="50" required >Hello World</textarea> <!-- All other attributes can be used except value attribute-->
+                <!-- <input type="submit" value="Submit Form"> -->
+                <input type="image" src="https://t3.ftcdn.net/jpg/00/30/01/62/360_F_30016272_EbkpRNb3vCs37lPpwTcv2RWM7FkTHxoM.jpg" height="50" width="100">
+
+            </div>
+
+            <div>
+                <!-- Drop Down form -->
+                <select size=""> <!-- Use size option to see number of options on screen, Use multiple to select multiple options-->
+                    <optgroup label="Cars">
+                        <option>Audi</option> <!-- Use selected attribute to select anything by default -->
+                        <option selected>BMW</option>
+                        <option>Tata</option>
+                    </optgroup> 
+                    <optgroup label="Sports">
+                        <option>Cricket</option>
+                        <option>Hockey</option>
+                        <option>Football</option>
+                    </optgroup> 
+                </select>
+            </div>
+
+            <div>
+                <input type="radio" value="Kuch bhi " checked name="gender">Male <!-- Name should be same to choose only a single option and should be different to choose multiple options-->
+                <input type="radio" value="de skte" name="gender">Female <!-- Use checked attribute to select an option by default-->
+                <input type="radio" value="Ho" name="gender">Other
+            </div>
+
+
+            <div>
+                <input type="checkbox" name="sports">Cricket <!-- Instead of same name you can select multiple options-->
+                <input type="checkbox" name="sports">Hockey
+                <input type="checkbox" name="sports">Football
+            </div>
+
+            <!-- datalist -->
+
+            <div>
+                <input type="text" placeholder="Search" list="Hello">
+                <datalist id="Hello">
+                    <option value="Mango">
+                    <option value="Orange">
+                    <option value="Papaya">
+                    <option value="Car">
+                    <option value="Prateek">
+                    <option value="Amishaa">
+                </datalist>
+                <input type="submit" value="Search">
+            </div>
+
+            <br><br><br><br><br>
+
+            
+
+            <fieldset >
+                <legend>Basic Information: </legend>
+                <!-- label it is used to write anything before the box -->
+                 <label for="fname"> First Name</label> <!-- Give id to which you want to connect and then use for attribut. When you will click on Name you will be focused in the box to write the name-->
+                <input type="text" name="First_Name" id="fname"> 
+                <label for="lname">Last Name</label>
+                <input type="text" naem="Last_Name" id="lname">
+            </fieldset>
+
+            <fieldset>
+               <legend>Other Information: </legend>
+                <!-- We use fieldset instead of div in forms-->
+                <!-- To give label to feildset we use legend tag -->
+                 <label for="address">Address</label>
+                <input type="text" name="Address" id="address"> 
+                <label for="Mob">Mobile Number</label>
+                <input type="number" name="Mobile_No" id="Mob">
+            </fieldset>
+
+            <fieldset>
+                <input type="submit" value="Submit">
+            </fieldset>
+
+            <fieldset>
+                <input type="range"> 
+            </fieldset>
+        </form>
+    </body>
+</html>
