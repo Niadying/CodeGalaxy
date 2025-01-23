@@ -39,10 +39,27 @@ void print5(int a){
     }
 }
 
+void print6(int a){
+    for (int i=0;i<a;i++){
+        
+        //spaces 
+        for(int j=0;j<a-1-i;j++){
+        cout<<" ";
+        }
+        
+        //stars
+        for(int j=0;j<=2*i ;j++){
+            cout<<"*";
+        }
+        
+    cout<<endl;
+    }
+}
 int main (){
     int dig=7;
     print2(dig);
     print3(dig);
     print4(dig);
     print5(dig);
+    print6(dig);
 }
