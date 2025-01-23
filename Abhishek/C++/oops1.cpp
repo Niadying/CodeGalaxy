@@ -37,9 +37,5 @@ int main()
     cout<< "the name of the student is "<<s007.name<< " adn the deaprt is "<< s007.department<<endl;
 
 
-
-
-
-
     return 0;
 }
