@@ -9,6 +9,13 @@ int main (){
         for(int i : a){
                 cout<<i<<" ";
         }
+
+        vector<pair<int,int>>vec;
+        vec.push_back({1,2});
+        vec.emplace_back(2,3);  // pair in a vector
+
+        cout<<vec[0].first;
+        v.emplace_back(4);  // IT IS FASTER THAN PUSH BACK
         cout<<endl;
         // IT IS A DYNAMC ARRAY. THAT MEANS IT CAN INCREASE ITS SIZE IF THE ARRAY IF FULL. IT CREATES ANOTHES VECTOR OF DOUBLE SIZE AND COPY EVERYTHING AT IT AND OLD ONE IS DEAD..
         v.push_back(1);
@@ -41,5 +48,34 @@ int main (){
 
         v.clear();  // WHILE CLEARING ONLY SIZE BECOMES ZERO, CAPACITY REMAINS SAME..
 
-        
+
+
+
+        // ITERATORS 
+
+        vector<int>::iterator ite = v.begin();
+        // datatype :: iterator_name = iterator initialize
+        // v.begin is pointing towards memory location on 1st element in vector b
+        // ite++ ---> 2nd location and same 
+
+        // vector<int>::iterator ite = v.end();  // end --> points toward location after the last part so ite-- is necessary to get to last location 
+        // vector<int>::iterator ite = v.rend(); // reverse end not used 
+        // vector<int>::iterator ite = v.rbegin();  // reverse begin
+
+        v.erase(v.begin(),v.begin()+3); // (start,end)  end location should be one more than till where you want to erase..
+
+        v.insert(v.begin(),3,5);
+        // (location , number of element, value of the element)
+
+        vector<int>h={12,12,1};
+        vector<int>copy(h);
+        cout<<endl<<endl;
+
+        h.insert(v.begin()+1, copy.begin(),copy.end());
+        for(int i:h){
+                cout<<i<<" ";
+        }
+        vector<int>v1={2};
+        vector<int>v2={1};
+        v1.swap(v2); //-->  VECTOR V1 IS SWAPPED BY V2(v1 = 1, v2 = 2)
 }
