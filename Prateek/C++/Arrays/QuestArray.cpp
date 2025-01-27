@@ -469,3 +469,57 @@
 //     }
     
 // }
+
+// SORT 0,1,2
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// void sortColors(vector<int>& nums) {
+//         int n = nums.size();
+//         int count0 = 0;
+//         for(int i = 0; i<n; i++){
+//             if(nums[i]==0)
+//             count0++;
+//         }
+//         int i = 0, j = n-1, k = count0;
+
+//         while(i<=k && k<=j){
+//              if(i<=k && k<=j && nums[i]==0) i++;
+//              if(i<=k && k<=j && nums[j]==2) j--;
+//              if(i<=k && k<=j && nums[k]==1) k++;
+
+//             if(i<=k && k<=j && nums[i]==2 && nums[j]==0){
+//                 swap(nums[i],nums[j]);
+//                 i++;j--;
+//             }
+//             if(i<=k && k<=j && nums[i]==1 && nums[k]==0){
+//                 swap(nums[i],nums[k]);
+//                 i++;k++;
+//             }
+//             if(i<=k && k<=j && nums[i]==2 && nums[k]==0){
+//                 swap(nums[i],nums[k]);
+//                 i++;
+//             }
+//             if(i<=k && k<=j && nums[i]==1 && nums[j]==0){
+//                 swap(nums[i],nums[j]);
+//                 i++;
+//             }
+//             if(nums[j]==1 && nums[k]==2 && i<=k && k<=j){
+//                 swap(nums[j],nums[k]);
+//                 j--;k++;
+//             }
+           
+//         }
+//     }
+
+// int main (){
+//     int n;
+//     cin>>n;
+//     vector<int>nums(n);
+//     for(int i = 0; i<n; i++){
+//         cin>>nums[i];
+//     }
+//     sortColors(nums);
+
+// }
