@@ -60,34 +60,139 @@
 // }
 
 
-// INSERTION SORT 
+// INSERTATION SORT 
 
-// #include<iostream>
+// #include<bits/stdc++.h>
 // using namespace std;
 
 // int main (){
-
-//     int arr[5]={5,900,34,223,6}; 
-    
-//     for(int i = 1; i<5; i++){
-//         int index = arr[i];
-//         int j = i-1;
-//         while(j>=0){
-//             if(arr[j]>index){
-//             arr[j+1] = arr[j];
-//         }
-//         else{
-//             break;
-//         }
-//         j--;
+//     int n;
+//     cin>>n;
+//     int arr[n];
+//     for(int i = 0 ;i<n; i++){
+//         cin>>arr[n];
 //     }
-        
-//         arr[j+1]=index;
-//     } 
 
-//     for(int i = 0 ;i<5;i++){
+//     for(int i = 0; i<n; i++){
+//         int j = i;
+//         while(j>0 && arr[j-1]>arr[j]){
+//             swap(arr[j-1],arr[j]);
+//             j--;
+//         }
+//     }
+
+//     for(int i = 0; i<n; i++){
 //         cout<<arr[i]<<" ";
+//     }
+// }
+
+
+
+// MERGE SORT 
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// void merg(vector<int>&arr, int low , int high , int mid ){
+//     vector<int>temp;
+//     int left = low;
+//     int right = mid+1;
+
+//     while(left<= mid && right<=high){
+//         if(arr[left]<arr[right]){
+//             temp.push_back(arr[left]);
+//             left++;
+//         }
+//         else {
+//             temp.push_back(arr[right]);
+//             right++;
+//         }   
+//     }
+
+//     while(left<=mid){
+//         temp.push_back(arr[left]);
+//         left++;
+//     }
+//     while(right<=high){
+//         temp.push_back(arr[right]);
+//         right++;
+//     }
+
+//     for(int i = low; i<=high; i++){
+//         arr[i]=temp[i-low];
 //     }
 
 // }
+// void mergesort(vector<int>&arr, int low, int high){
+//     if(high<=low) return ;
+//     int mid = (low+high)/2;
+//     mergesort(arr,low,mid);
+//     mergesort(arr,mid+1,high);
+//     merg(arr,low,high,mid);
+// }
 
+// int main (){
+//     int n;
+//     cin>>n;
+//     vector<int> arr(n);
+//     for(int i = 0; i<n; i++){
+//         cin>>arr[i];
+//     }
+//     mergesort(arr,0,n-1);
+//     for(int i = 0; i<n ;i++){
+//         cout<<arr[i]<<" ";
+//     }
+// }
+
+
+// QUICK SORT 
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int partition(int arr[], int low, int high){
+
+    int pivot = arr[low];
+        int i  = low;
+        int j = high;
+        while(i<j){
+        
+            while(arr[i] <= pivot && i<high){
+                i++;
+            }
+            while(arr[j] > pivot && j>low){
+                j--;
+            }
+            if(i<j)
+            swap(arr[i],arr[j]);
+            
+        }
+        swap(arr[j],arr[low]);
+        return j;
+
+}
+
+void qs(int arr[], int low, int high){
+
+    if(low<high){
+    int partitionIndex = partition(arr,low,high);
+    qs(arr,low,partitionIndex-1);
+    qs(arr,partitionIndex+1,high);
+
+    }
+}
+
+
+int main (){
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i = 0; i<n ;i++){
+        cin>>arr[i];
+    }
+    qs(arr,0,n-1);
+     for(int i = 0; i<n ;i++){
+        cout<<arr[i]<<" ";
+    }
+}

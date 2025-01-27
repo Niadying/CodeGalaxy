@@ -30,7 +30,9 @@ int main (){
         mpp[brr[i]]++;
      }
     // iterate in the map (map stores data in sorted order)
-
+        map<int,int>::iterator ittt = mpp.end();
+        ittt--;
+        ittt--;
     for(auto it : mpp){
         cout<<it.first<<"--> "<<it.second<<endl;
     }
@@ -38,6 +40,7 @@ int main (){
      cin>>number;
      cout<<number<<" is repeated "<<mpp[number]<<" times";
     // we can do same for characters also map<char,int>mpp
+        cout<<endl<<(*ittt).first<<endl;
 
     // T.C. of storing and fetching of map in all cases is O(logN).
     // T.C. of storing and fetching of unordered_map is O(1) is best and avg case and O(N) in worst case.
