@@ -1,3 +1,57 @@
+// 2ND LARGEST AND 2ND SMALLEST
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+
+// int secondSmallest (int arr[], int n){
+//     int smallest = arr[0];
+//     int secondsm = INT_MAX;
+
+//     for(int i = 1; i<n ;i++){
+
+//         if(arr[i]<smallest){
+//             secondsm = smallest;
+//             smallest = arr[i];
+//         }
+//         else if (arr[i]<secondsm && secondsm!=smallest){
+//             secondsm = arr[i];
+//         }
+//     }
+//     return secondsm;
+// }
+
+// int secondLargest (int arr[], int n){
+//     int largest = arr[0];
+//         int second = -1;
+//         for(int i = 1 ;i<n; i++){
+//             if(arr[i]>largest){
+//                 second = largest;
+//                 largest = arr[i];
+//             }
+//             else if (arr[i]<largest && second<arr[i]){
+//                 second = arr[i];
+//             }
+           
+//         }
+//         return second;
+// }
+// int main (){
+//     int n;
+//     cin>>n;
+//     int arr[n];
+//     for(int i = 0; i<n ;i++){
+//         cin>>arr[i];
+//     }
+//     cout<<"2nd Largest element is "<<secondLargest(arr,n); 
+//     cout<<endl<<"2nd Smallest element is "<<secondSmallest(arr,n); 
+
+// }
+
+
+
+// UNIQUE 
+
 // // #include<iostream>
 // // using namespace std;
 
@@ -254,10 +308,10 @@
 
 // ROTATE THE ARRAY..
 
-#include<iostream>
-#include<vector>
-#include<algorithm>
-using namespace std;
+// #include<iostream>
+// #include<vector>
+// #include<algorithm>
+// using namespace std;
 
 // void Rotate(int arr[],int n,int m){
 //          int temp[n]={0};
@@ -337,81 +391,81 @@ using namespace std;
 //  SUM OF 2 ARAYS..
 
 
-#include<iostream>
-#include<vector>
-using  namespace std;
+// #include<iostream>
+// #include<vector>
+// using  namespace std;
 
-vector<int>reverse(vector<int>v){
-    int s = 0 ; 
-    int e = v.size()-1;
+// vector<int>reverse(vector<int>v){
+//     int s = 0 ; 
+//     int e = v.size()-1;
 
-    while(s<=e){
-        swap(v[s],v[e]);
-        s++;
-        e--;
-    }
+//     while(s<=e){
+//         swap(v[s],v[e]);
+//         s++;
+//         e--;
+//     }
   
-    return v;
-}
+//     return v;
+// }
 
-vector<int> sum (int arr[],int brr[],int n , int m){
-    vector<int>v;
-    int i = n-1;
-    int j = m-1;
-    int carry = 0;
-    int sum = 0;
-    while(i >= 0  &&  j >= 0 ){
+// vector<int> sum (int arr[],int brr[],int n , int m){
+//     vector<int>v;
+//     int i = n-1;
+//     int j = m-1;
+//     int carry = 0;
+//     int sum = 0;
+//     while(i >= 0  &&  j >= 0 ){
         
-        int val1 = arr[i];
-        int val2 = brr[j];
+//         int val1 = arr[i];
+//         int val2 = brr[j];
         
-        sum = val1+val2+carry;
-        carry = sum/10;
-        int value = sum%10;
-        v.push_back(value);
-        i--;
-        j--;
+//         sum = val1+val2+carry;
+//         carry = sum/10;
+//         int value = sum%10;
+//         v.push_back(value);
+//         i--;
+//         j--;
 
-    }
+//     }
 
-    // if 1st array is big
+//     // if 1st array is big
 
-    while(i>=0){
-        sum = arr[i]+carry;
-        carry = sum/10;
-        int value = sum%10;
-        v.push_back(value);
-        i--;
-    }
+//     while(i>=0){
+//         sum = arr[i]+carry;
+//         carry = sum/10;
+//         int value = sum%10;
+//         v.push_back(value);
+//         i--;
+//     }
 
-    // if 2nd array is big
+//     // if 2nd array is big
 
-    while(j>=0){
-        sum = brr[j]+carry;
-        carry = sum/10;
-        int value = sum%10;
-        j--;
-        v.push_back(value);
-    }
+//     while(j>=0){
+//         sum = brr[j]+carry;
+//         carry = sum/10;
+//         int value = sum%10;
+//         j--;
+//         v.push_back(value);
+//     }
 
-    // if carry is extra.
-    while(carry !=0){
-        sum = carry;
-        carry = sum/10;
-        int value = sum%10;
-        v.push_back(value);
-    }
+//     // if carry is extra.
+//     while(carry !=0){
+//         sum = carry;
+//         carry = sum/10;
+//         int value = sum%10;
+//         v.push_back(value);
+//     }
 
     
-    return reverse(v);
-}
+//     return reverse(v);
+// }
 
-int main (){
-    int arr1[5]={1,9,3,5,6};
-    int arr2[3]={9,9,9};
-    vector<int> ans = sum(arr1,arr2,5,3);
-    for(int i:ans){
-        cout<<i<<" ";
-    }
+// int main (){
+//     int arr1[5]={1,9,3,5,6};
+//     int arr2[3]={9,9,9};
+//     vector<int> ans = sum(arr1,arr2,5,3);
+//     for(int i:ans){
+//         cout<<i<<" ";
+//     }
     
-}
+// }
