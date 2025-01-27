@@ -89,37 +89,26 @@
 
 
 
-// FIBBONACCI SERIES*************
-
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
+int main (){
+    vector<int>nums={1,1,2};
+        int n = nums.size();
+        vector<int>temp;
+        temp.push_back(nums[0]);
+        for(int i = 0; i<n; i++){
+            int index = nums[i];
+            if(temp.back()<index)
+            temp.push_back(nums[i]);
+        }
+        nums.erase(nums.begin(), nums.end());
+        for(int i = 0;i<temp.size() ; i++){
+            nums.push_back(temp[i]);
+        }
+        
+       for(auto i:nums){
+        cout<<i<<" ";
+       }
 
-void fibo(int n){
-
-    int a = 0;
-    int b = 1;
-    cout<<0<<1;
-    
-    for(int i = 1; i<n-1; i++){
-
-
-        int sum = a+b;
-        cout<<sum;
-        a = b;
-        b = sum;
-
-    }
-}
-    
-
-int main(){
-
-    int n;
-    cout<<"Enter the number : ";
-    cin>>n;
-
-    fibo(n);
-
-    return 0;
-
+        
 }
