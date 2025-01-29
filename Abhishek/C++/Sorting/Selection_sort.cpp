@@ -7,7 +7,7 @@ int sort(int arr[], int a){
     for(int i = 0; i<a-1; i++){
         int min=i;
         for(int j=i;j<a;j++ ){
-            if(min>arr[j]){
+            if(arr[min]>arr[j]){
                 min=j;
             }
         }
