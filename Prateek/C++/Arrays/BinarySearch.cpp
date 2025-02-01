@@ -246,51 +246,76 @@
 
 // SQUARE ROOT USING BINARY SEARCH 
 
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+
+// int SquareRoot(int n){
+
+// int s = 1 , e = n ,ans = -1 ;
+// while(s<=e){
+
+//     int mid = s + (e-s)/2;
+
+//     if(mid==n/mid){
+//         return mid;
+//     }
+//     else if (mid>n/mid){
+//         e = mid - 1;
+//     }
+//     else{
+//         ans = mid;
+//         s = mid + 1; 
+//     }
+// }
+// return ans;
+// }
+ 
+// double optimize(int n, int precision , double ans){
+
+//     double factor = 1;
+//     int temp = ans;
+//     for(int i = 0; i<precision; i++){
+//         factor = factor / 10;
+
+//         for(double j = temp; j<n/j; j= j + factor ){
+//             ans = j;
+//         }
+//     }
+//     return ans ;
+// }
+
+// int main (){
+
+//     int n;
+//     cout<<"Enter the value of n : ";
+//     cin>>n;
+//     int answer = SquareRoot(n);
+//     double final = optimize(n , 4, answer);
+//     cout<<final;
+     
+// }
+
+
+
+
+#include<bits/stdc++.h>
 using namespace std;
 
-int SquareRoot(int n){
+int binarysearch (vector<int>&nums, int start, int end,int target){
+    int mid = start+(end-start)/2;
+    if(start>end) return -1;
+    if(nums[mid]==target) return mid;
+    else if (nums[mid]>target) binarysearch(nums,mid+1,end,target);
+    else binarysearch(nums,start,mid-1,target);
 
-int s = 1 , e = n ,ans = -1 ;
-while(s<=e){
-
-    int mid = s + (e-s)/2;
-
-    if(mid==n/mid){
-        return mid;
-    }
-    else if (mid>n/mid){
-        e = mid - 1;
-    }
-    else{
-        ans = mid;
-        s = mid + 1; 
-    }
-}
-return ans;
-}
- 
-double optimize(int n, int precision , double ans){
-
-    double factor = 1;
-    int temp = ans;
-    for(int i = 0; i<precision; i++){
-        factor = factor / 10;
-
-        for(double j = temp; j<n/j; j= j + factor ){
-            ans = j;
-        }
-    }
-    return ans ;
 }
 
 int main (){
-
-    int n;
-    cout<<"Enter the value of n : ";
-    cin>>n;
-    int answer = SquareRoot(n);
-    double final = optimize(n , 4, answer);
-    cout<<final;
-     
+    vector<int>temp(7);
+    temp={1,2,8,10,11,12,19};
+    int target;
+    cout<<"Enter target you wannt to search : ";
+    cin>>target;
+    cout<<binarysearch(temp,0,6,target);
+    
 }

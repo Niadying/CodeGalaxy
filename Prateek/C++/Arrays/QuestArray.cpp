@@ -523,3 +523,44 @@
 //     sortColors(nums);
 
 // }
+
+
+
+
+// SUB ARRAY WITH XOR K
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int subarray(vector<int>&nums,int k){
+    int n = nums.size();
+    map<int,int>mpp;
+    mpp[0]=1;
+    int xo = 0;
+    int count = 0;
+    for(int i = 0; i<n; i++){
+        xo = xo^nums[i];
+
+        int req = xo^k;
+
+        if(mpp.find(req)!=mpp.end()){
+            count+=mpp[req];
+        }
+        mpp[xo]++;
+    }
+    return count ;
+}
+
+int main (){
+    int n;
+    cin>>n;
+    vector<int>nums(n);
+    for(int i = 0; i<n; i++){
+        cin>>nums[i];
+    }
+    int k;
+    cin>>k;
+
+    cout<<"No. of subarray are : "<<subarray(nums,k);
+
+}
