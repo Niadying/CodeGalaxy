@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int countofnum(int n){
-    int count = 0;
+int reverse1999(int n){
+    int reverse = 0;
     while (n > 0){
         int lastdigit = n % 10;
-        count = count + 1;
+        reverse = (reverse*10) + lastdigit;
         n = n / 10;
     }
-    cout << count;
+    cout << reverse;
 }
 
 int main(){
@@ -17,7 +17,7 @@ int main(){
     int count;
     cin >> n;
 
-    countofnum(n);
+    reverse1999(n);
 
     return 0;
 

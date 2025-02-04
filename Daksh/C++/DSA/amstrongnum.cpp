@@ -1,14 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int countofnum(int n){
-    int count = 0;
+int amstrongnum(int n){
+    
+    int strong = 0;
     while (n > 0){
         int lastdigit = n % 10;
-        count = count + 1;
+        int cube = lastdigit*lastdigit*lastdigit;
+        strong = strong + cube;
         n = n / 10;
+
     }
-    cout << count;
+    cout << strong;
 }
 
 int main(){
@@ -17,7 +20,7 @@ int main(){
     int count;
     cin >> n;
 
-    countofnum(n);
+    amstrongnum(n);
 
     return 0;
 

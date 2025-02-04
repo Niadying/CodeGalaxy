@@ -34,5 +34,5 @@ int main (){
     
 
     bubble(arr,N);
-
+return 0;
 }

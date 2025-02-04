@@ -219,26 +219,31 @@
 using namespace std;
 
 int main (){
+
+    vector<int>temp;
     int arr[3][3]={1,2,3,4,5,6,7,8,9};
-    int col = 3;
-    int s = 0;
-    int e = (3*3)-1;
-    int target = 6;
+    temp.push_back(arr[0][2]);
+    cout<<temp[0];
 
-    while(s<=e){
-        int mid = s - (s-e)/2;
-        int element = arr[mid/col][mid%col];
+    // int col = 3;
+    // int s = 0;
+    // int e = (3*3)-1;
+    // int target = 6;
 
-        if(element == target ){
-            cout<<"Found at "<<mid/col<<" "<<mid%col;
-            break;
-        }
+    // while(s<=e){
+    //     int mid = s - (s-e)/2;
+    //     int element = arr[mid/col][mid%col];
 
-        else if(element<target){
-            s = mid + 1 ;
-        }
-        else{
-            e = mid - 1;
-        }
-    }
+    //     if(element == target ){
+    //         cout<<"Found at "<<mid/col<<" "<<mid%col;
+    //         break;
+    //     }
+
+    //     else if(element<target){
+    //         s = mid + 1 ;
+    //     }
+    //     else{
+    //         e = mid - 1;
+    //     }
+    // }
 }
