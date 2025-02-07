@@ -11,7 +11,7 @@ int term(int b,int a){
 
 
 int main(){
-    cout<<"Enter the number of rows you wnt to print: ";
+    cout<<"Enter the number of rows you wnt to print: \n";
     int rows;
     cin>>rows;
     for(int i=0;i<rows ;i++){
