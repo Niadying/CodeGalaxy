@@ -81,3 +81,123 @@ int main(){
 
 
 
+
+//LEETCODE 
+
+int findMax(const vector<int> &v) {
+    int maxi = INT_MIN;
+    for (int num : v) {
+        maxi = max(maxi, num);
+    }
+    return maxi;
+}
+int findmin(const vector<int> &v) {
+    int mini = INT_MAX;
+    for (int num : v) {
+        mini =min(mini, num);
+    }
+    return mini;
+}
+
+bool possible(vector<int> &bloomDay, int day,int m,int k){
+    int cnt=0;
+    int no_of_b=0;
+    for(int i=0;i<bloomDay.size();i++){
+        if(bloomDay [i]<=day) cnt++;
+        else{
+            no_of_b += cnt/k;
+            cnt=0;
+        }
+
+    }
+     no_of_b += cnt/k;
+     return no_of_b >=m;
+     }
+    
+
+
+    int minDays(vector<int>& bloomDay, int m, int k) {
+        int n =bloomDay.size();
+        int low = findmin(bloomDay);
+        int high = findMax(bloomDay);
+        int cnt =0;
+     
+
+    
+        
+        while (low <=high){
+            int mid=(low +high)/2;
+            if (n < static_cast<long long>(m) * k) return -1;
+          
+            
+            if(possible(bloomDay , mid , m , k)){
+                high =mid-1;
+            }
+
+        else {
+            low =mid+1;
+        }
+            
+        }
+        return low;
+    }
+
+
+
+    //LEETCODE
+
+
+    int findMax(const vector<int> &v) {
+    int maxi = INT_MIN;
+    for (int num : v) {
+        maxi = max(maxi, num);
+    }
+    return maxi;
+
+}
+
+int findsum(const vector<int> &v){
+    int sum =0;
+    for (int i=0;i<v.size();i++){
+        sum += v[i];
+    }
+    return sum;
+}
+
+int mincapacity(vector<int>& weights, int days, int cap){
+    int day = 1; 
+    int load = 0;
+    int n = weights.size();
+    for (int i = 0; i < n; i++) {
+        if (load + weights[i] > cap) {
+            day += 1; 
+            load = weights[i]; 
+        }
+        else {
+            
+            load += weights[i];
+        }
+    }
+    return day;
+}
+    int shipWithinDays(vector<int>& weights, int days) {
+        int n =weights.size();
+        int low = findMax(weights);
+        int high = findsum(weights);
+
+        while(low <=high){
+            int mid = (low +high)/2;
+        
+          
+             if (mincapacity(weights,days,mid)<=days){
+                high =mid-1;
+            }
+            else{
+                low =mid+1;
+            }
+
+
+        }
+        return low;
+
+    }
