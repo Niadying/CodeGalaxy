@@ -35,7 +35,7 @@ node *cnvrtarr2ll(vector<int> &arr){
 int search(node *head ,int val){
     node * temp = head;
     while (temp){
-        if(temp->data == val)return 1;
+        if(temp->data == val) return 1;
        temp = temp->next;
     }
     return 0;
