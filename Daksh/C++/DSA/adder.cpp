@@ -7,6 +7,8 @@ int main(){
 
     string name;
     cin >> name;
+
+    cout << name << "\n";
     namemixup(name);
 
     cout << name << "\n";
