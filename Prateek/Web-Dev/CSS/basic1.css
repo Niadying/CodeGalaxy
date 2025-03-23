@@ -122,15 +122,15 @@
     width: 1000px;
 } */
 
-/* #div1{ */
-    /* background-color: blueviolet; */
-    /* height: 50%; YOU CAN GIVE IT IN PERCENTAGE AS WELL. AS DIV IS IN BODY. SO IT'S PERCENTAGE WOULD BE IN REFERENCE WITH BODY */
-    /* width: 70%; */
-    /* max-width: 500px; WIDTH IS 70% BUT DON'T GO BEHIND 500PX. IF 70% IS LESS THAN 500PX GO FOR IT ELSE GO FOR 500 PX */
-    /* max-height: 1000px; SAME FOR HEIGHT */
-    /* min-width: 1000px; SAME CONCEPT FOR MIN WIDTH AND HEIGHT */
-    /* min-height: 4000px; */
-/* } */
+#div1{ 
+    background-color: blueviolet;
+    height: 50%; /*YOU CAN GIVE IT IN PERCENTAGE AS WELL. AS DIV IS IN BODY. SO IT'S PERCENTAGE WOULD BE IN REFERENCE WITH BODY*/
+    width: 70%;
+    max-width: 500px; /*WIDTH IS 70% BUT DON'T GO BEHIND 500PX. IF 70% IS LESS THAN 500PX GO FOR IT ELSE GO FOR 500 PX*/
+    max-height: 1000px; /*SAME FOR HEIGHT*/
+    min-width: 1000px; /*SAME CONCEPT FOR MIN WIDTH AND HEIGHT*/
+    min-height: 4000px;
+ }
 
 
 /* PADDING */

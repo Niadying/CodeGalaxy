@@ -35,10 +35,10 @@
 // 1ST AND LAST OCCCURENCE *****
 
 
-// #include<iostream>
+// #include<bits/stdc++.h>
 // using namespace std;
 
-// int firstOcc(int arr[], int key , int n){
+// int firstOcc(vector<int>arr, int key , int n){
 
 //     int ans = -1; 
 //     int start = 0;
@@ -66,7 +66,7 @@
      
 // }
 
-// int lastOcc(int arr[], int key , int n){
+// int lastOcc(vector<int>arr, int key , int n){
 
 //     int start = 0, ans = -1; 
 //     int end = n - 1;
@@ -93,7 +93,7 @@
 // }
 
 // int main(){
-//     int arr[11]={1,2,3,4,5,6,7,7,7,7,11};
+//     vector<int>arr={1,2,3,4,5,6,7,7,7,7,11};
     
 //     int first = firstOcc(arr,7,11);
 //     cout<<first<<endl;
@@ -296,26 +296,37 @@
 // }
 
 
+// RECURSICE BINARY SEARCH
 
+// #include<bits/stdc++.h>
+// using namespace std;
 
+// int binarysearch (vector<int>&nums, int start, int end,int target){
+//     int mid = start+(end-start)/2;
+//     if(start>end) return -1;
+//     if(nums[mid]==target) return mid;
+//     else if (nums[mid]>target) binarysearch(nums,mid+1,end,target);
+//     else binarysearch(nums,start,mid-1,target);
+
+// }
+
+// int main (){
+//     vector<int>temp(7);
+//     temp={1,2,8,10,11,12,19};
+//     int target;
+//     cout<<"Enter target you wannt to search : ";
+//     cin>>target;
+//     cout<<binarysearch(temp,0,6,target);
+    
+// }
 #include<bits/stdc++.h>
 using namespace std;
-
-int binarysearch (vector<int>&nums, int start, int end,int target){
-    int mid = start+(end-start)/2;
-    if(start>end) return -1;
-    if(nums[mid]==target) return mid;
-    else if (nums[mid]>target) binarysearch(nums,mid+1,end,target);
-    else binarysearch(nums,start,mid-1,target);
-
-}
-
 int main (){
-    vector<int>temp(7);
-    temp={1,2,8,10,11,12,19};
-    int target;
-    cout<<"Enter target you wannt to search : ";
-    cin>>target;
-    cout<<binarysearch(temp,0,6,target);
-    
+    vector<int>nums{1,2,3,4,5,6,7,8,9,10};
+    cout<<accumulate(nums.begin(),nums.end(),0);
+    int a = lower_bound(nums.begin(),nums.end(),3)-nums.begin();
+    cout<<"\n"<<a<<endl;
+    int arr[]={1,2,3,4,5,6,7,8,9};
+    int b = lower_bound(arr, arr+9,3)-arr;
+    cout<<b<<endl;
 }
