@@ -6,22 +6,22 @@ void solve(){
     int n;
     cin>>n;
     vector<int>nums(n);
-    vector<int>ans;
+    map<int,int>freq;
+    int ans = 0;
     for(int i = 0; i<n; i++){
         cin>>nums[i];
+        freq[nums[i]]++;
+        ans = ans^nums[i];
     }
-    for(int i = 1; i<n ;i++){
-        if(nums[i-1]>nums[i]){
-            ans.push_back(1);
-            ans.push_back(nums[i]);
+
+    bool twice = false;
+    for(auto i:freq){
+        if(i.second%2 == 0){
+            twice = true;
         }
-        else ans.push_back(nums[i]);
     }
-    cout<<ans.size()+1<<endl;
-    cout<<nums[0]<<" ";
-    for(auto i:ans){
-        cout<<i<<" ";
-    }
+    if(twice) cout<<-1;
+    else cout<<ans;
     cout<<endl;
 }
 int main (){

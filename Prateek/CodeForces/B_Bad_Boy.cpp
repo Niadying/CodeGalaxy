@@ -1,19 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
+using ll = long long;
 
 void solve(){
-
-    int a,b;
-    cin>>a>>b;
-    int xk,yk;
-    cin>>xk>>yk;
-    int xq,yq;
-    cin>>xq>>yq;
-    
     
 }
 int main (){
-    int y;
+    ll y;
     cin>>y;
     while(y--){
         solve();

@@ -1,14 +1,9 @@
 
-#include<iostream>
-using namespace std;
-
-int sub (){
-    cout<<"Hello World";
-}
 #include<bits/stdc++.h>
 using namespace std;
 
 int main (){
-    cout<<"Saarthak chutiya hai..."<<endl;
-    sub();
+    for(int i = 0; i<INT_MAX; i++){
+        cout<<"Saarthak chutiya hai..."<<endl;
+    }
 }
