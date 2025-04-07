@@ -1,10 +1,9 @@
-#include <iostream>
+
+#include<bits/stdc++.h>
 using namespace std;
 
-int main(){
-
-    cout << "Hello!\n";
-
-    return 0;
-
+int main (){
+    for(int i = 0; i<INT_MAX; i++){
+        cout<<"Saarthak chutiya hai..."<<endl;
+    }
 }
