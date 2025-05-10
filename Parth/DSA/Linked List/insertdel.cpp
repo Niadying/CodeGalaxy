@@ -20,31 +20,9 @@ class node{
     }
 };
 
-node *cnvrtarr2ll(vector<int> &arr){
-    node* head = new node (arr[0]);
-    node* mover= head;
-    for (int i =1;i<4;i++){
-        node* temp = new node(arr[i]);
-        mover -> next = temp;
-        mover =temp;
-    }
-    return head;
-}
-
-
-int search(node *head ,int val){
-    node * temp = head;
-    while (temp){
-        if(temp->data == val) return 1;
-       temp = temp->next;
-    }
-    return 0;
-} 
-
 void print(node*head){
     while(head !=NULL){
         cout<< head -> data<<" ";
-        head = head->next;
 
     }
     cout<<endl;
@@ -61,26 +39,12 @@ node * removehead(node*head){
 
 }
 
-
-
 int main (){
     vector<int > arr;
     arr.push_back(2);
     arr.push_back(5);
     arr.push_back(8);
     arr.push_back(7);
-    // node* y =new node(arr[0], nullptr);
-    // cout<<y->data;
-
-    node* head =cnvrtarr2ll(arr);
-    // cout << head-> data;
-    //  node * temp = head;
-    //  while (temp){
-    //     cout<<temp-> data<<" ";
-    //     temp = temp->next;
-    //  }
-
-    // cout << search(head,5);
 
     head =removehead(head);
     print(head) ;
