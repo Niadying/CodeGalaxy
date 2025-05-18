@@ -15,8 +15,9 @@
 //                 MiniIndex = j;
 //             }
 
-//             swap(arr[i],arr[MiniIndex]);
 //         }
+
+//         swap(arr[i],arr[MiniIndex]);
 //     }
     
 //     for(int i = 0; i<5; i++){
@@ -35,11 +36,11 @@
 //     int arr[5]={5,4,6,8,2};
 //     int n;
 //     cin>>n;
-//     for(int i = 0 ;i<n-1; i++){
+//     for(int i = n-1; i >= 1; i--){
 
 //         bool swapped = false;
 
-//         for(int j = 0; j<n-i-1; j++){
+//         for(int j = 0; j<=i-1; j++){
 
 //             if(arr[j]>arr[j+1]){
 //                 swap(arr[j],arr[j+1]);
@@ -60,7 +61,7 @@
 // }
 
 
-// INSERTATION SORT 
+// INSERTION SORT 
 
 // #include<bits/stdc++.h>
 // using namespace std;

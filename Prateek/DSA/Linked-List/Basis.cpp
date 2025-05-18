@@ -52,6 +52,9 @@ int length_N_find (Node* head,int n){
     return cnt;
 }
 
+Node* oddevenLL(Node* head){
+    
+}
 int main (){
 
     vector<int>arr = {1,2,3,4,5};

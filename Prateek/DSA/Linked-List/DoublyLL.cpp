@@ -36,7 +36,7 @@ node* arrtodll(vector<int>&nums){
 void print(node* head){
     node* amishaa = head;
     while(head){
-        cout<<"Amishaa : "<<amishaa->data<<endl;
+        cout<<amishaa->data<<" ";
         amishaa = amishaa->next;
     }
 }
@@ -121,6 +121,8 @@ node* insertbeforetail(node* head, int k){
 }
 
 node* insertbeforekth(node* head, int k , int val){
+
+    if(k==1) return insertbeforehead(head,val);
     int cnt = 0;
     node* mover = head;
     node* newnode = new node(val);
@@ -139,12 +141,75 @@ node* insertbeforekth(node* head, int k , int val){
     return head;
 }
 
-node* insertbefornode(node* temp, int k ){
-    
+void insertbefornode(node* temp, int k ){
+    node* prev = temp->back;
+    node* newnode = new node(k);
+    newnode->back = prev;
+    newnode->next = temp;
+
+    temp->back = newnode;
+    prev->next = newnode;
 }
 
+node* reversedll(node* head){
+    // int cnt = 0, cnt1 = 0;
+    // node* mover = head;
+    // while(mover->next!=nullptr){
+    //     cnt++;
+    //     mover= mover->next;
+    // }
+    // node* prev = mover;
+    // mover = head;
+    // while(cnt1<cnt){
+    //     swap(mover->data, prev->data);
+    //     mover = mover->next;
+    //     prev = prev->back;
+    //     cnt1+=2;
+    // }
+    // return head;
+
+    // OPTIMIZE
+
+    if(head==nullptr || head->next == nullptr) return head;
+    node* last = NULL;
+    node* current = head;
+    while(current){
+        last = current->back;
+        current->back = current->next;
+        current->next = last;
+        current = current->back;
+    }
+    return last->back;
+}
+
+node* sumlist(node* head1, node* head2){
+    
+    node* temp1 = head1;
+    node* temp2 = head2;
+    node* DummyNode = new node(-1);
+    node* current = DummyNode;
+    int carry = 0;
+    while(temp1!=NULL || temp2!=NULL){
+        int sum = carry;
+        if(temp1) sum+=temp1->data;
+        if(temp2) sum+=temp2->data;
+        node* newNode = new node(sum%10);
+        carry = sum/10;
+        DummyNode->next = newNode;
+        DummyNode = DummyNode->next;
+        if(temp1) temp1 = temp1->next;
+        if(temp2) temp2 = temp2->next;
+    }
+    if(carry){
+        node* newnode = new node(carry);
+        DummyNode->next = newnode;
+    }
+    return current->next;
+}
+
+
 int main (){
-    vector<int>nums={1,2,3,4,5,6,7,8,9};
+    vector<int>nums={1,2,3,4,5,6,7,8,9,10,11};
     node* head = arrtodll(nums);
     // print(head);
     // print(delfirst(head));
@@ -152,6 +217,16 @@ int main (){
     // print(delkth(head,5));
     // print(insertbeforehead(head, 10));
     // print(insertbeforetail(head, 10));
-    print(insertbeforekth(head, 6,10));
+    // print(insertbeforekth(head, 6,10));
+    // node* newhead = reversedll(head);
+    // print(newhead);
+
+    // vector<int>nums2={1,2,3,4,5};
+    // vector<int>nums1={1,2,3,4,5};
+    // node* head1 = arrtodll(nums2);
+    // node* head2 = arrtodll(nums1);
+    // node* ans = sumlist(head1, head2);
+    // print(ans);
+
     return 0;
 }
