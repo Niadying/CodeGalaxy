@@ -10,24 +10,37 @@ void solve(){
     for(int i = 0; i<m; i++){
         freq[t[i]]++;
     }
-    int j = 0;
     string temp="";
     for(int i = 0; i<n; i++){
         if(freq.find(s[i])!=freq.end()) temp+=s[i];
     }
     n = temp.size();
     // cout<<temp<<endl;
-    unordered_map<int,char>mpp;
-    for(int i = 0; i<n; i++){
-        if(temp[i]==t[j] && mpp.find(t[j])==mpp.end()){
-            j++;
-            mpp[temp[i]]++;
+    unordered_map<char,int>mpp;
+    for(int i = 0; i<t.length(); i++){
+        mpp[t[i]]++;
+    }
+    string hello ="";
+    int j = 0;
+    for(int i = 0; i<n; i++){  
+        if(hello==t){
+            if(mpp.find(temp[i])!=mpp.end()){
+                cout<<"NO"<<endl;
+                return;
+            }
         }
-        else if (mpp.find(t[j])!=mpp.end()){
-            cout<<"NO"<<endl; return;
+        else if (j<m){
+            if(temp[i]==t[j]){
+                hello+=temp[i];
+                j++;
+            }
         }
     }
+    if(hello!=t){
+        cout<<"NO"<<endl; return;
+    }
     cout<<"YES"<<endl;
+    
 }
 int main (){
     ll y;
