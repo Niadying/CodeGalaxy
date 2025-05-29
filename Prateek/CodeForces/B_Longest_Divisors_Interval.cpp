@@ -5,18 +5,13 @@ using ll = long long;
 void solve(){
     ll n;
     cin>>n;
-    ll cnt = 0;
-    ll maxi = 0;
-    for(ll i = 1; i<=n/2; i++){
-        if((n%i) == 0) cnt++;
-        else{
-            maxi = max(maxi,cnt);
-            cnt=0;
-        }
+    ll i = 1, cnt = 0;
+    while(n%i==0){
+        cnt++; i++;
     }
-    maxi = max(maxi,cnt);
-    cout<<maxi<<endl;
-}
+    cout<<cnt<<endl;
+}   
+
 int main (){
     ll y;
     cin>>y;

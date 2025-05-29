@@ -22,21 +22,15 @@ void solve(){
         cout<<0<<endl; return;
     }
     ll left = n-maxi;
-    ll temp = 0;
-    ll j = 1;
-    ll got = 0;
     while(left){
         cnt++;
-        got = maxi*j;
-        j*=2;
-        left--;
-        got--;
-        cnt++;
-        if(left&&got){
+        ll got = maxi;
+        while(got && left){
             left--;
             cnt++;
+            got--;
         }
-
+        maxi = n-left;
     }
     cout<<cnt<<endl;
 

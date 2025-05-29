@@ -13,7 +13,7 @@ void solve(){
     if(n==1){
         if(s[0]=='*')cout<<1<<endl;
         else cout<<0<<endl;
-        return;    
+        return; 
     }
     for(int i = 0; i<n; i++){
         if(s[i]=='*'){
