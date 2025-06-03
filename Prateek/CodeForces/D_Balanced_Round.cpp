@@ -21,19 +21,20 @@ void solve(){
         cout<<0<<endl;
         return;
     }
-    int ans = 0;
-    int a = problem.front();
     if(problem.size()==1){
-        ans = min(a,n-a);
+        cout<<min(problem[0],n-problem[0])<<endl; return;
     }
-    if(problem.size()==2){
-        int b = problem[1];
-        ans = min(b, n-a);
+    int y = problem.size();
+    int ans = INT_MAX;
+    int index = problem[0];
+    for(int i = 0; i<y-1; i++){
+        int temp = problem[i];
+        int temp1 = problem[i+1];
+        int diff = problem[i]+n-problem[i+1];
+        ans = min(ans,diff);
     }
-    if(problem.size()>=3){
-        int b = problem.back();
-        
-    }
+    ans = min(ans,min(problem.back(), n-problem[0]));
+    cout<<ans<<endl;
 
 }
 int main (){

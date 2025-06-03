@@ -11,15 +11,14 @@ void solve(){
     }
     ll gcd1 = abs(a-b);
     ll move1 = min(a,b);
-    ll gcd2 = __gcd(a,b);
-    ll move2 = 0;
-    while(gcd2==1){
-        move2++;
-        gcd2 = __gcd(++a,++b);
-    }
+    ll gcd2 = __gcd(++a,++b);
+    ll move2 = 1;
 
     if(gcd1>gcd2){
         cout<<gcd1<<" "<<move1;
+    }
+    else if (gcd1 == gcd2){
+        cout<<gcd1<<" "<<min(move1,move2);
     }
     else cout<<gcd2<<" "<<move2;
     cout<<endl;
