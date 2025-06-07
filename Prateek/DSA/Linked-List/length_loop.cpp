@@ -38,19 +38,43 @@ void print(node* head){
 }
 
 int calc_length(node* head){
-    node* temp = head;
-    map<node* , int>mpp;
-    int length = 0;
-    while(temp){
-        length++;
-        if(mpp.find(temp)!=mpp.end()){
-            length = length - mpp[temp];
-            return length;
+
+    // OPTIMAL -> USE TORTOISE AND HARE WHEN SLOW == FAST START COUNTING TILL SLOW==FAST AGAIN MOVE IT ANY BY ONE STEP;
+
+    node* slow = head;
+    node* fast = head;
+
+    while(fast&&fast->next){
+        slow = slow->next;
+        fast = fast->next->next;
+        if(slow == fast){
+            int cnt = 1;
+            slow = slow->next;
+            while(slow!=fast){
+                slow = slow->next;
+                cnt++;
+            }
+            return cnt;
         }
-        mpp[temp] = length;
-        temp = temp->next;
     }
     return 0;
+
+
+    // BRUTE FORCE -> STORE POSTION IN MAP AND IF IT REPEATS JUST SUBSTRAVT FROM PREVIOUS VALUE
+
+    // node* temp = head;
+    // map<node* , int>mpp;
+    // int length = 0;
+    // while(temp){
+    //     length++;
+    //     if(mpp.find(temp)!=mpp.end()){
+    //         length = length - mpp[temp];
+    //         return length;
+    //     }
+    //     mpp[temp] = length;
+    //     temp = temp->next;
+    // }
+    // return 0;
 }
 int main (){
     vector<int>nums={1,2,3,4,5,6,7,8,9,10};
