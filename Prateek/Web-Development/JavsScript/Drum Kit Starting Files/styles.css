@@ -17,31 +17,31 @@ footer {
 }
 
 .w {
-
+  background-image: url("./images/crash.png");
 }
 
 .a {
-
+  background-image: url("./images/kick.png");
 }
 
 .s {
-
+  background-image: url("./images/snare.png");
 }
 
 .d {
-
+  background-image: url("./images/tom1.png");
 }
 
 .j {
-
+  background-image: url("./images/tom2.png");
 }
 
 .k {
-
+  background-image: url("./images/tom3.png");
 }
 
 .l {
-
+  background-image: url("./images/tom4.png");
 }
 
 .set {
@@ -78,4 +78,9 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+button:hover{
+  border-color: black;
+  cursor:pointer;   
 }

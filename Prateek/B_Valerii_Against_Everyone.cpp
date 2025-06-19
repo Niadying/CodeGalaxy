@@ -5,25 +5,33 @@ using ll = long long;
 void solve(){
     ll n;
     cin>>n;
-    // vector<int>temp(n);
     vector<ll>nums(n);
     for(int i = 0; i<n; i++){
         cin>>nums[i];
-        nums[i] = pow(2,nums[i]);
     }
-    ll sum1 = 0;
-    for(int i = 0; i<n; i++){
-        sum1+=nums[i];
+    for(int i = 0; i<n-1; i++){
+        vector<ll>temp = nums;
+        ll sum1 = 0;
         ll sum2 = 0;
+        sort(temp.begin(),temp.begin()+i);
+        for(int j = 0; j<i; j++){
+            if(temp[j]==temp[j+1]){
+                temp[j+1]==temp[j]++;
+                sum1 = temp[j+1];
+            }
+        }
+        if(i==0) sum1 = nums[0];
+
         for(int j = i+1; j<n; j++){
-            sum2+=nums[j];
-            if(sum1==sum2){
-                cout<<"YES"<<endl; return;
+            sort(temp.begin()+j,temp.end());
+             if(temp[j]==temp[j+1]){
+                temp[j+1]==temp[j]++;
+                sum1 = temp[j+1];
             }
         }
         if(sum1==sum2){
-                cout<<"YES"<<endl; return;
-            }
+            cout<<"YES"<<endl; return;
+        }
     }
     cout<<"NO"<<endl;
 }
