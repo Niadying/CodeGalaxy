@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM projects</title>
+            <style>
+                .js-subscribe-button{
+                    border:none;
+                    background-color: black;
+                    color: white;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    font-weight: bold;
+                    border-radius: 50px;
+                    cursor:pointer;
+                }
+
+                .is-subscribed{
+                    border:none;
+                    background-color: rgb(240,240,240);
+                    color: black;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    font-weight: bold;
+                    border-radius: 50px;
+                    cursor:pointer;
+                }
+                .calculate-butt{
+                    background-color: green;
+                    color:white;
+                }
+            </style>
+
+
+
+    </head>
+    <body>
+        <p>Youtube Subscribe Button</p>
+        <button onclick="
+            subscribe();
+        "class = "js-subscribe-button">Subscribe</button>
+
+       <p>Amazon Shipping Calculator</p>
+        <input placeholder="Cost of order" class="js-calculator"
+                 onkeydown=" if(event.key === 'Enter'){
+                    calculator();
+                    }">
+        <button class="calculate-butt" onclick="calculator()">Calculate</button>
+
+        <p class="js-output"></p>
+
+        <script>
+            function calculator() {
+                const inputElement = document.querySelector('.js-calculator');
+                let cost = Number(inputElement.value);
+                
+                if (cost < 40) {
+                    cost += 10;
+                }
+
+                document.querySelector('.js-output').innerHTML = `Total: $${cost}`;
+            }
+
+
+            function subscribe(){
+                    const subsbutton= document.querySelector('.js-subscribe-button');
+                    if (subsbutton .innerText === 'Subscribe'){
+                        subsbutton.innerHTML ='Subscribed';
+                        subsbutton.classList.add('is-subscribed');
+                    }
+                    else {
+                        subsbutton.innerHTML = 'Subscribe'; 
+                        subsbutton.classList.remove('is-subscribed');
+
+                    }
+                }
+        </script>
+
+    </body>
+</html>
