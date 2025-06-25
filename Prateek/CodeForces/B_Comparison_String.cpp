@@ -8,26 +8,28 @@ void solve(){
     cin>>n;
     string s;
     cin>>s;
-    int ans = 0;
-    int cnt = 0;
-    int streak = 0;
-    vector<int>cntt;
-    for(int i = 1; i<n; i++){
-        if(s[i]=='<' && s[i-1]=='>'){
-            cnt+=2;
-            i++;
-            streak++;
-        }
-        if(s[i]=='>' && s[i-1]=='<') {
-            cnt+=2;
-            i++;
-            streak++;
+    int streakgreater = 0, streaklesser = 0;
+    int maxi1 = 0, maxi2 = 0;
+    int cnt = 1;
+    for(int i = 0; i<n; i++){
+        if(s[i]=='<'){
+            streakgreater++;
+            maxi2 = max(maxi2, streaklesser);
+            streaklesser = 0;
+            if(streakgreater>maxi2 && streakgreater>maxi1){
+                cnt++;
+            }
         }
         else{
-            
+            streaklesser++;
+            maxi1 = max(maxi1, streakgreater);
+            streakgreater = 0;
+            if(streaklesser>maxi1 && streaklesser>maxi2){
+                cnt++;
+            }
         }
     }
-    cout<<n-cnt+1<<endl;
+    cout<<cnt<<endl;
 }
 
 int main (){
