@@ -3,7 +3,7 @@
 using namespace std;
 
 int main (){
-
+    // TC -> LOG(N);
     // MAX HEAP...
     priority_queue<int>maxi;  // IT ALWAYS GIVES THE MAXIMUM VALUE WHEN THE VALUE IS ACCESSED.. 
 
