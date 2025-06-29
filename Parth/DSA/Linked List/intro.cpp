@@ -12,7 +12,7 @@ class node{
         data = data1;
         next = next1;
     }
-
+ 
     public:
     node(int data1){
         data = data1;
@@ -81,8 +81,5 @@ int main (){
     //  }
 
     // cout << search(head,5);
-
-    head =removehead(head);
-    print(head) ;
 
 }
