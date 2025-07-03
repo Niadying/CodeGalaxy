@@ -14,7 +14,9 @@ using namespace std;
             cout<<"*";
         }
         cout<<endl;
+        
     }
+    cout<<~5<<endl;
     
     return 0;
 }

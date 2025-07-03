@@ -20,15 +20,15 @@ $("a").html("<em>Open Meee</em>")
 // ADDING EVENT LISTNER
 
 // click
-$("button").click(function(e){
-    $("h1").css("color","blueviolet");
-    $("h1").removeClass("big-title");
+// $("button").click(function(e){
+//     $("h1").css("color","blueviolet");
+//     $("h1").removeClass("big-title");
     // if(e.currentTarget.className == "request haeeli"){
     //     alert("Shi ja rhe ho guru");
     // }
-    console.log(e.currentTarget.className);
+    // console.log(e.currentTarget.className);
 
-});
+// });
 
 // keypress
 var temp = "";
@@ -44,6 +44,9 @@ $("h1").on("mouseover", function(){
     $("h1").text("You have arrived on h1");
 });
 
+$("h1").on("mouseout", function(){
+    $("h1").text("You left h1");
+});
 
 // ADDING HTML ELEMENTS
 
@@ -55,3 +58,15 @@ $("h1").append("<button>New Btn </button>");
 // REMOVING ELEMENTS
 
 // $("button").remove();
+
+
+// ADDING WEBSITE ANIMATIONS
+
+$("button").on("click",function(){
+    // $("h1").hide();
+    // $("h1").show();
+    // $("h1").fadeToggle();
+    // $("h1").slideToggle();
+    $("h1").slideUp().slideDown().animate({opacity:0.25});
+
+});
