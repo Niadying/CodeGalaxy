@@ -56,7 +56,7 @@ void levelorder(TreeNode* root){
         for(int j = 0 ;j<ans[i].size(); j++){
             cout<<ans[i][j]<<"  ";
         }
-        // cout<<endl;
+        cout<<endl;
     }
 }
 
@@ -71,15 +71,15 @@ int main (){
     root->right->right = new TreeNode(8);
     root->right->right->left = new TreeNode(9);
     root->right->right->right = new TreeNode(10);
-    cout<<"Preorder: ";
-    preorder(root);
-    cout<<"\n";
-    cout<<"Inorder: ";
-    inorder(root);
-    cout<<"\n";
-    cout<<"Postorder: ";
-    postorder(root);
-    cout<<"\n";
-    cout<<"Levelorder: ";
+    // cout<<"Preorder: ";
+    // preorder(root);
+    // cout<<"\n";
+    // cout<<"Inorder: ";
+    // inorder(root);
+    // cout<<"\n";
+    // cout<<"Postorder: ";
+    // postorder(root);
+    // cout<<"\n";
+    cout<<"Levelorder: "<<endl;
     levelorder(root);
 }

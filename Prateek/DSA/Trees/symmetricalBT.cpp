@@ -14,13 +14,15 @@ class TreeNode{
     }
 };
  
-int maxDepth(TreeNode* root){
-    int ans = 0;
-    if(root==NULL) return 0;   
-    int left = maxDepth(root->left);
-    int right = maxDepth(root->right);
-    ans = 1 + max(left,right);
-    return ans;
+bool traverse(TreeNode* r1, TreeNode* r2){
+    if(!r1||!r2) return r1==r2;
+    if(r1->data!=r2->data)return false;
+    return traverse(r1->left,r2->right)&&traverse(r1->right,r2->left);
+}
+
+bool isSymmetric(TreeNode* root) {
+    if(!root)return true;
+    return traverse(root->left, root->right);
 }
 
 int main (){
@@ -34,5 +36,8 @@ int main (){
     root->right->right = new TreeNode(8);
     root->right->right->left = new TreeNode(9);
     root->right->right->right = new TreeNode(10);
-    cout<<maxDepth(root);
+    if(isSymmetric(root)){
+        cout<<"Symmetric"<<endl;
+    }
+    else cout<<"Not symmetric.."<<endl;
 }

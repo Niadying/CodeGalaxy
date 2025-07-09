@@ -14,13 +14,16 @@ class TreeNode{
     }
 };
  
-int maxDepth(TreeNode* root){
-    int ans = 0;
-    if(root==NULL) return 0;   
-    int left = maxDepth(root->left);
-    int right = maxDepth(root->right);
-    ans = 1 + max(left,right);
-    return ans;
+TreeNode* LCA(TreeNode* root, TreeNode* r1, TreeNode* r2){
+    
+    if(!root)return NULL;
+    if(root==r1||root==r2)return root;
+    TreeNode* left = LCA(root->left,r1,r2);
+    TreeNode* right= LCA(root->right,r1,r2);
+    if(!left) return right;
+    if(!right) return left;
+    return root;
+    
 }
 
 int main (){
@@ -34,5 +37,7 @@ int main (){
     root->right->right = new TreeNode(8);
     root->right->right->left = new TreeNode(9);
     root->right->right->right = new TreeNode(10);
-    cout<<maxDepth(root);
+
+    cout<<LCA(root,root->left,root->right)->data<<endl;
+    
 }

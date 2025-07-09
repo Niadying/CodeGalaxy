@@ -14,13 +14,8 @@ class TreeNode{
     }
 };
  
-int maxDepth(TreeNode* root){
-    int ans = 0;
-    if(root==NULL) return 0;   
-    int left = maxDepth(root->left);
-    int right = maxDepth(root->right);
-    ans = 1 + max(left,right);
-    return ans;
+int maxSum(TreeNode* root, int &maxi){
+    if(root==nullptr)return 0;
 }
 
 int main (){
@@ -34,5 +29,4 @@ int main (){
     root->right->right = new TreeNode(8);
     root->right->right->left = new TreeNode(9);
     root->right->right->right = new TreeNode(10);
-    cout<<maxDepth(root);
 }

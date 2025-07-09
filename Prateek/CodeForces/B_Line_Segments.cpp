@@ -27,8 +27,30 @@ ll gcd(ll a, ll b) { // greatest common divisor
     return b ? gcd(b, a % b) : a;
 }
 
-void solve(){
 
+void solve(){
+    ll n;
+    cin>>n;
+    ll x,y,px,py;
+    cin>>x>>y>>px>>py;
+    vi nums(n);
+    rep(i,0,n) cin>>nums[i];
+    ld dist = sqrt(pow(x-px,2)+pow(y-py,2));
+    ld sum = 0;
+    sort(nums.rbegin(),nums.rend());
+    ll j = n-1;
+    // sum = nums[j];
+    // per(i,n-2,0){
+    //     if(sum-nums[i]>=0){
+    //         sum-=nums[i];
+    //     }
+    //     else sum+=nums[i];
+    // }
+    ld maxi = nums[0];
+    ld maxsum = accumulate(all(nums),1LL*0.0);
+    sum = (2*maxi)-max(ld(0.0),maxsum);
+    if(dist<=maxsum && dist>=sum)cout<<"Yes"<<endl;
+    else cout<<"No"<<endl;
 }
 
 int main(){
@@ -48,3 +70,4 @@ int main(){
     }
     return 0;
 }
+

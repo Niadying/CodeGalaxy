@@ -14,13 +14,17 @@ class TreeNode{
     }
 };
  
-int maxDepth(TreeNode* root){
-    int ans = 0;
-    if(root==NULL) return 0;   
-    int left = maxDepth(root->left);
-    int right = maxDepth(root->right);
-    ans = 1 + max(left,right);
-    return ans;
+bool rootToNode(TreeNode* root, int x, vector<int>&nums){
+    if(!root) return false;
+    nums.push_back(root->data);
+    if(root->data==x) return true;
+    bool left = rootToNode(root->left,x,nums);
+    bool right = rootToNode(root->right,x,nums);
+    if(!left&&!right){
+        nums.pop_back();
+        return false;
+    }
+    return true;
 }
 
 int main (){
@@ -34,5 +38,8 @@ int main (){
     root->right->right = new TreeNode(8);
     root->right->right->left = new TreeNode(9);
     root->right->right->right = new TreeNode(10);
-    cout<<maxDepth(root);
+    vector<int>nums;
+    rootToNode(root,9,nums); 
+    for(auto i:nums)cout<<i<<" ";
+    cout<<endl;
 }

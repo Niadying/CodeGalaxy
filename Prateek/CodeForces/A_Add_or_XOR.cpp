@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> // includes most STL headers:contentReference[oaicite:0]{index=0}
+#include <bits/stdc++.h> // CODEFORCES
 using namespace std;
 
 // Common type aliases
@@ -21,62 +21,56 @@ typedef vector<ll> vll;
 #define rep(i,a,b) for(int i=(a); i<(b); ++i)
 #define per(i,a,b) for(int i=(a); i>=(b); --i)
 
-// Debugging (prints only when not online judge):contentReference[oaicite:6]{index=6}
-#ifndef ONLINE_JUDGE
-  #define debug(x) cerr << #x << " = " << (x) << '\n'
-#else
-  #define debug(x) // no-op
-#endif
-
-// Random number generator (seeded with high-res clock):contentReference[oaicite:7]{index=7}
-mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
 // Utility functions
 ll gcd(ll a, ll b) { // greatest common divisor
     return b ? gcd(b, a % b) : a;
 }
 
-
 void solve(){
-    ll n;
-    cin>>n;
-    vll nums(n);
-    map<ll,ll>mpp;
-    per(i,0,n) {
-        cin>>nums[i];
-        mpp[nums[i]]++;
+    ll a,b,x,y;
+    cin>>a>>b>>x>>y;
+    int diff = b-a;
+    ll ans =0 ;
+    if(a==b){
+        cout<<0<<endl; return;
     }
-    sort(all(nums));
-
-    ll k = 0;
-    ll cnt0 = 0;
-    vll ans;
-    if(mpp.find(0)!=mpp.end()) cnt0 = mpp[0];
-    while(k!=n){
-        ll cnt = 0;
-        if(cnt0>=k){
-            ans.pb(1);
-            k++;
-            continue;
+    if(a>b){
+        if((a^1)!=b) {cout<<-1<<endl; return;}
+        else{
+            cout<<y<<endl;
         }
-        map<ll,ll>temp = mpp;
-        ll mini = 0;
-        for(auto i:temp){
-            int val = i.fi;
-            int freq = i.se;
-            if(val>=mini+1){
-                cnt+=freq;
-                mini = val;
+        return;
+    }
+    if(x<=y){
+        cout<<diff*x<<endl; return;
+    }
+    else{
+        if(a%2==1){
+            if(diff%2==0){
+                ans+= (diff/2)*x;
+                ans+= (diff/2)*y;
             }
             else{
-                mini = val;
+                ans+=(diff/2)*x;
+                ans+=(diff/2)*y;
+                ans+=x;
             }
-        }    
-        ans.pb(cnt);
-        k++;
+        }
+        else{
+            if(diff%2==0){
+                ans+= (diff/2)*x;
+                ans+= (diff/2)*y;
+
+            }
+            else{
+                ans+=(diff/2)*x;
+                ans+=(diff/2)*y;
+                ans+=y;
+            }
+        }
     }
-    rep(i,0,sz(ans)) cout<<ans[i]<<" ";
-    cout<<1<<endl;
+    cout<<ans<<endl;
 
 }
 
@@ -97,3 +91,4 @@ int main(){
     }
     return 0;
 }
+

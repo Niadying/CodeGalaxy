@@ -14,15 +14,29 @@ class TreeNode{
     }
 };
  
-int maxDepth(TreeNode* root){
-    int ans = 0;
-    if(root==NULL) return 0;   
-    int left = maxDepth(root->left);
-    int right = maxDepth(root->right);
-    ans = 1 + max(left,right);
-    return ans;
+void topView(TreeNode* root){
+    queue<pair<TreeNode*,int>>q;
+    map<int,int>mpp;
+    vector<int>ans;
+    if(!root)return;
+    q.push({root,0});
+    while(!q.empty()){
+        int n = q.size();
+        for(int i = 0; i<n ;i++){
+            TreeNode* node = q.front().first;
+            int vertical = q.front().second;
+            q.pop();
+            if(node->left) q.push({node->left,vertical-1});
+            if(node->right) q.push({node->right,vertical+1});
+            mpp[vertical]=node->data;
+        }
+    }
+    for(auto i:mpp){
+        ans.push_back(i.second);
+    }
+    for(auto i:ans)cout<<i<<" ";
+    cout<<endl;
 }
-
 int main (){
     TreeNode* root = new TreeNode(1);
     root->left = new TreeNode(2);
@@ -34,5 +48,5 @@ int main (){
     root->right->right = new TreeNode(8);
     root->right->right->left = new TreeNode(9);
     root->right->right->right = new TreeNode(10);
-    cout<<maxDepth(root);
+    topView(root);
 }

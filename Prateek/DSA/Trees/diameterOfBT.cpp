@@ -13,14 +13,20 @@ class TreeNode{
         left=right=NULL;
     }
 };
- 
-int maxDepth(TreeNode* root){
-    int ans = 0;
-    if(root==NULL) return 0;   
-    int left = maxDepth(root->left);
-    int right = maxDepth(root->right);
-    ans = 1 + max(left,right);
-    return ans;
+
+int maxi = INT_MIN;
+
+int findHeight(TreeNode* root){
+    if(root==NULL)return 0;
+    int left = findHeight(root->left);
+    int right = findHeight(root->right);
+    maxi = max(left+right,maxi);
+    return 1+max(left,right);
+}
+
+void findDiameter(TreeNode* root){
+    int dia = findHeight(root);
+    cout<<"Diameter : "<<maxi<<endl;
 }
 
 int main (){
@@ -34,5 +40,5 @@ int main (){
     root->right->right = new TreeNode(8);
     root->right->right->left = new TreeNode(9);
     root->right->right->right = new TreeNode(10);
-    cout<<maxDepth(root);
+    findDiameter(root);
 }
