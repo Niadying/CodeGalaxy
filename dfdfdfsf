@@ -1,0 +1,1521 @@
+[33mcommit 6164aac0be1e9b8cd2a9a3ddab4d3b849f7427f6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: dev-PrateekSahu <prateeksahu75116@gmail.com>
+Date:   Wed Jul 9 16:47:42 2025 +0530
+
+    making folders
+
+[1mdiff --git a/Prateek/.cph/.A_Add_or_XOR.cpp_9894167f64d922c5f8269c4e9e417ae1.prob b/Prateek/.cph/.A_Add_or_XOR.cpp_9894167f64d922c5f8269c4e9e417ae1.prob[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5cae576[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/.cph/.A_Add_or_XOR.cpp_9894167f64d922c5f8269c4e9e417ae1.prob[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m{"name":"A. Add or XOR","group":"Codeforces - Codeforces Round 1035 (Div. 2)","url":"https://codeforces.com/contest/2119/problem/0","interactive":false,"memoryLimit":256,"timeLimit":1000,"tests":[{"id":1751726160767,"input":"7\n1 4 1 2\n1 5 2 1\n3 2 2 1\n1 3 2 1\n2 1 1 2\n3 1 1 2\n1 100 10000000 10000000\n","output":"3\n6\n1\n3\n-1\n-1\n990000000\n"}],"testType":"single","input":{"type":"stdin"},"output":{"type":"stdout"},"languages":{"java":{"mainClass":"Main","taskClass":"AAddOrXOR"}},"batch":{"id":"e63dcaad-1840-48b0-b2cb-467d643a5075","size":1},"srcPath":"e:\\Prateek\\Github\\CodeGalaxy\\Prateek\\A_Add_or_XOR.cpp"}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/.cph/.B_Line_Segments.cpp_790e5320d279a1f2a7fc7b642bbbdfc5.prob b/Prateek/.cph/.B_Line_Segments.cpp_790e5320d279a1f2a7fc7b642bbbdfc5.prob[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ede6d28[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/.cph/.B_Line_Segments.cpp_790e5320d279a1f2a7fc7b642bbbdfc5.prob[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m{"name":"B. Line Segments","group":"Codeforces - Codeforces Round 1035 (Div. 2)","url":"https://codeforces.com/contest/2119/problem/B","interactive":false,"memoryLimit":256,"timeLimit":1500,"tests":[{"id":1751727717980,"input":"5\n2\n1 1 5 1\n3 3\n3\n1 1 3 3\n2 3 4\n2\n100 100 100 100\n4 5\n1\n5 1 1 4\n5\n2\n10000000 10000000 10000000 10000000\n10000 10000\n","output":"Yes\nYes\nNo\nYes\nYes\n"}],"testType":"single","input":{"type":"stdin"},"output":{"type":"stdout"},"languages":{"java":{"mainClass":"Main","taskClass":"BLineSegments"}},"batch":{"id":"94cae55c-8796-4335-ab81-d13fbb5638db","size":1},"srcPath":"e:\\Prateek\\Github\\CodeGalaxy\\Prateek\\B_Line_Segments.cpp"}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/.cph/.C_A_Good_Problem.cpp_0e9daa10e500973fcf812ca170afac7a.prob b/Prateek/.cph/.C_A_Good_Problem.cpp_0e9daa10e500973fcf812ca170afac7a.prob[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b4c90ce[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/.cph/.C_A_Good_Problem.cpp_0e9daa10e500973fcf812ca170afac7a.prob[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m{"name":"C. A Good Problem","group":"Codeforces - Codeforces Round 1035 (Div. 2)","url":"https://codeforces.com/contest/2119/problem/C","interactive":false,"memoryLimit":256,"timeLimit":2000,"tests":[{"id":1751731579979,"input":"9\n1 4 4 1\n3 1 3 3\n4 6 9 2\n4 6 9 3\n4 6 7 4\n2 5 5 1\n2 3 6 2\n999999999999999999 1000000000000000000 1000000000000000000 999999999999999999\n1000000000000000000 1 999999999999999999 1000000000000000000\n","output":"4\n1\n6\n8\n-1\n-1\n-1\n1000000000000000000\n2\n"}],"testType":"single","input":{"type":"stdin"},"output":{"type":"stdout"},"languages":{"java":{"mainClass":"Main","taskClass":"CAGoodProblem"}},"batch":{"id":"fc191bf5-2d6c-4836-a332-34686a85e9f8","size":1},"srcPath":"e:\\Prateek\\Github\\CodeGalaxy\\Prateek\\C_A_Good_Problem.cpp"}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/D_Binary_String_Battle.cpp b/Prateek/CodeForces/A_Add_or_XOR.cpp[m
+[1msimilarity index 63%[m
+[1mrename from Prateek/D_Binary_String_Battle.cpp[m
+[1mrename to Prateek/CodeForces/A_Add_or_XOR.cpp[m
+[1mindex caac0ee..9b2b6e7 100644[m
+[1m--- a/Prateek/D_Binary_String_Battle.cpp[m
+[1m+++ b/Prateek/CodeForces/A_Add_or_XOR.cpp[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-#include <bits/stdc++.h> // includes most STL headers:contentReference[oaicite:0]{index=0}[m
+[32m+[m[32m#include <bits/stdc++.h> // CODEFORCES[m
+ using namespace std;[m
+ [m
+ // Common type aliases[m
+[36m@@ -21,40 +21,56 @@[m [mtypedef vector<ll> vll;[m
+ #define rep(i,a,b) for(int i=(a); i<(b); ++i)[m
+ #define per(i,a,b) for(int i=(a); i>=(b); --i)[m
+ [m
+[31m-// Debugging (prints only when not online judge):contentReference[oaicite:6]{index=6}[m
+[31m-#ifndef ONLINE_JUDGE[m
+[31m-  #define debug(x) cerr << #x << " = " << (x) << '\n'[m
+[31m-#else[m
+[31m-  #define debug(x) // no-op[m
+[31m-#endif[m
+[31m-[m
+[31m-// Random number generator (seeded with high-res clock):contentReference[oaicite:7]{index=7}[m
+[31m-mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());[m
+ [m
+ // Utility functions[m
+ ll gcd(ll a, ll b) { // greatest common divisor[m
+     return b ? gcd(b, a % b) : a;[m
+ }[m
+ [m
+[31m-[m
+ void solve(){[m
+[31m-    ll n,k;[m
+[31m-    cin>>n>>k;[m
+[31m-    string s;[m
+[31m-    cin>>s;[m
+[31m-    ll cnt1 = 0;[m
+[31m-    for(ll i = 0; i<n; i++) if(s[i]=='1') cnt1++;[m
+[31m-    if(k==1){[m
+[31m-        if(cnt1<=1)[m
+[31m-        cout<<"Alice"<<endl;[m
+[31m-        else cout<<"Bob"<<endl;[m
+[32m+[m[32m    ll a,b,x,y;[m
+[32m+[m[32m    cin>>a>>b>>x>>y;[m
+[32m+[m[32m    int diff = b-a;[m
+[32m+[m[32m    ll ans =0 ;[m
+[32m+[m[32m    if(a==b){[m
+[32m+[m[32m        cout<<0<<endl; return;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    if(a>b){[m
+[32m+[m[32m        if((a^1)!=b) {cout<<-1<<endl; return;}[m
+[32m+[m[32m        else{[m
+[32m+[m[32m            cout<<y<<endl;[m
+[32m+[m[32m        }[m
+         return;[m
+     }[m
+[31m-    if(cnt1<=k){[m
+[31m-        cout<<"Alice"<<endl; return;[m
+[32m+[m[32m    if(x<=y){[m
+[32m+[m[32m        cout<<diff*x<<endl; return;[m
+     }[m
+[31m-    [m
+[32m+[m[32m    else{[m
+[32m+[m[32m        if(a%2==1){[m
+[32m+[m[32m            if(diff%2==0){[m
+[32m+[m[32m                ans+= (diff/2)*x;[m
+[32m+[m[32m                ans+= (diff/2)*y;[m
+[32m+[m[32m            }[m
+[32m+[m[32m            else{[m
+[32m+[m[32m                ans+=(diff/2)*x;[m
+[32m+[m[32m                ans+=(diff/2)*y;[m
+[32m+[m[32m                ans+=x;[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m        else{[m
+[32m+[m[32m            if(diff%2==0){[m
+[32m+[m[32m                ans+= (diff/2)*x;[m
+[32m+[m[32m                ans+= (diff/2)*y;[m
+ [m
+[32m+[m[32m            }[m
+[32m+[m[32m            else{[m
+[32m+[m[32m                ans+=(diff/2)*x;[m
+[32m+[m[32m                ans+=(diff/2)*y;[m
+[32m+[m[32m                ans+=y;[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m    cout<<ans<<endl;[m
+ [m
+ }[m
+ [m
+[36m@@ -75,3 +91,4 @@[m [mint main(){[m
+     }[m
+     return 0;[m
+ }[m
+[41m+[m
+[1mdiff --git a/Prateek/cp.cpp b/Prateek/CodeForces/B_Line_Segments.cpp[m
+[1msimilarity index 72%[m
+[1mrename from Prateek/cp.cpp[m
+[1mrename to Prateek/CodeForces/B_Line_Segments.cpp[m
+[1mindex 3e477cb..e40d8e6 100644[m
+[1m--- a/Prateek/cp.cpp[m
+[1m+++ b/Prateek/CodeForces/B_Line_Segments.cpp[m
+[36m@@ -27,8 +27,30 @@[m [mll gcd(ll a, ll b) { // greatest common divisor[m
+     return b ? gcd(b, a % b) : a;[m
+ }[m
+ [m
+[31m-void solve(){[m
+ [m
+[32m+[m[32mvoid solve(){[m
+[32m+[m[32m    ll n;[m
+[32m+[m[32m    cin>>n;[m
+[32m+[m[32m    ll x,y,px,py;[m
+[32m+[m[32m    cin>>x>>y>>px>>py;[m
+[32m+[m[32m    vi nums(n);[m
+[32m+[m[32m    rep(i,0,n) cin>>nums[i];[m
+[32m+[m[32m    ld dist = sqrt(pow(x-px,2)+pow(y-py,2));[m
+[32m+[m[32m    ld sum = 0;[m
+[32m+[m[32m    sort(nums.rbegin(),nums.rend());[m
+[32m+[m[32m    ll j = n-1;[m
+[32m+[m[32m    // sum = nums[j];[m
+[32m+[m[32m    // per(i,n-2,0){[m
+[32m+[m[32m    //     if(sum-nums[i]>=0){[m
+[32m+[m[32m    //         sum-=nums[i];[m
+[32m+[m[32m    //     }[m
+[32m+[m[32m    //     else sum+=nums[i];[m
+[32m+[m[32m    // }[m
+[32m+[m[32m    ld maxi = nums[0];[m
+[32m+[m[32m    ld maxsum = accumulate(all(nums),1LL*0.0);[m
+[32m+[m[32m    sum = (2*maxi)-max(ld(0.0),maxsum);[m
+[32m+[m[32m    if(dist<=maxsum && dist>=sum)cout<<"Yes"<<endl;[m
+[32m+[m[32m    else cout<<"No"<<endl;[m
+ }[m
+ [m
+ int main(){[m
+[36m@@ -48,3 +70,4 @@[m [mint main(){[m
+     }[m
+     return 0;[m
+ }[m
+[41m+[m
+[1mdiff --git a/Prateek/DSA/Trees/LCA.cpp b/Prateek/DSA/Trees/LCA.cpp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1ea9cc7[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/DSA/Trees/LCA.cpp[m
+[36m@@ -0,0 +1,43 @@[m
+[32m+[m[32m#include<bits/stdc++.h>  // TREES[m
+[32m+[m[32musing namespace std;[m
+[32m+[m[32musing ll = long long;[m
+[32m+[m
+[32m+[m[32mclass TreeNode{[m
+[32m+[m[32m    public:[m
+[32m+[m[32m    int data;[m
+[32m+[m[32m    TreeNode* left;[m
+[32m+[m[32m    TreeNode* right;[m
+[32m+[m
+[32m+[m[32m    TreeNode(int data){[m
+[32m+[m[32m        this->data = data;[m
+[32m+[m[32m        left=right=NULL;[m
+[32m+[m[32m    }[m
+[32m+[m[32m};[m
+[32m+[m[41m [m
+[32m+[m[32mTreeNode* LCA(TreeNode* root, TreeNode* r1, TreeNode* r2){[m
+[32m+[m[41m    [m
+[32m+[m[32m    if(!root)return NULL;[m
+[32m+[m[32m    if(root==r1||root==r2)return root;[m
+[32m+[m[32m    TreeNode* left = LCA(root->left,r1,r2);[m
+[32m+[m[32m    TreeNode* right= LCA(root->right,r1,r2);[m
+[32m+[m[32m    if(!left) return right;[m
+[32m+[m[32m    if(!right) return left;[m
+[32m+[m[32m    return root;[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mint main (){[m
+[32m+[m[32m    TreeNode* root = new TreeNode(1);[m
+[32m+[m[32m    root->left = new TreeNode(2);[m
+[32m+[m[32m    root->left->left = new TreeNode(4);[m
+[32m+[m[32m    root->left->right = new TreeNode(5);[m
+[32m+[m[32m    root->left->right->left = new TreeNode(6);[m
+[32m+[m[32m    root->right = new TreeNode(3);[m
+[32m+[m[32m    root->right->left = new TreeNode(7);[m
+[32m+[m[32m    root->right->right = new TreeNode(8);[m
+[32m+[m[32m    root->right->right->left = new TreeNode(9);[m
+[32m+[m[32m    root->right->right->right = new TreeNode(10);[m
+[32m+[m
+[32m+[m[32m    cout<<LCA(root,root->left,root->right)->data<<endl;[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/DSA/Trees/balancedTree.cpp b/Prateek/DSA/Trees/balancedTree.cpp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cd05f21[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/DSA/Trees/balancedTree.cpp[m
+[36m@@ -0,0 +1,50 @@[m
+[32m+[m[32m#include<bits/stdc++.h>  // TREES[m
+[32m+[m[32musing namespace std;[m
+[32m+[m[32musing ll = long long;[m
+[32m+[m
+[32m+[m[32mclass TreeNode{[m
+[32m+[m[32m    public:[m
+[32m+[m[32m    int data;[m
+[32m+[m[32m    TreeNode* left;[m
+[32m+[m[32m    TreeNode* right;[m
+[32m+[m
+[32m+[m[32m    TreeNode(int data){[m
+[32m+[m[32m        this->data = data;[m
+[32m+[m[32m        left=right=NULL;[m
+[32m+[m[32m    }[m
+[32m+[m[32m};[m
+[32m+[m[41m [m
+[32m+[m[32mpair<int,bool> traverse(TreeNode* root, bool &ans){[m
+[32m+[m[32m    if(root==NULL) return {0,true};[m
+[32m+[m[32m    pair<int,bool> l = traverse(root->left,ans);[m
+[32m+[m[32m    pair<int,bool> r = traverse(root->right,ans);[m
+[32m+[m[32m    if(ans==false)return {0,false};[m
+[32m+[m[32m    if(abs(l.first-r.first)>1){[m
+[32m+[m[32m        ans = false;[m
+[32m+[m[32m        return {0,false};[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mbool isBalanced(TreeNode* root){[m
+[32m+[m[32m    bool ans = true;[m
+[32m+[m[32m    pair<int,bool>t = traverse(root,ans);[m
+[32m+[m[32m    return t.second;[m
+[32m+[m[32m}[m
+[32m+[m[32mint main (){[m
+[32m+[m[32m    TreeNode* root = new TreeNode(1);[m
+[32m+[m[32m    root->left = new TreeNode(2);[m
+[32m+[m[32m    root->left->left = new TreeNode(4);[m
+[32m+[m[32m    root->left->right = new TreeNode(5);[m
+[32m+[m[32m    root->left->right->left = new TreeNode(6);[m
+[32m+[m[32m    root->right = new TreeNode(3);[m
+[32m+[m[32m    root->right->left = new TreeNode(7);[m
+[32m+[m[32m    root->right->right = new TreeNode(8);[m
+[32m+[m[32m    root->right->right->left = new TreeNode(9);[m
+[32m+[m[32m    root->right->right->right->right = new TreeNode(10);[m
+[32m+[m[32m    root->right->right->right->right->right = new TreeNode(10);[m
+[32m+[m[32m    root->right->right->right->right->right->right = new TreeNode(10);[m
+[32m+[m[32m    root->right->right->right = new TreeNode(10);[m
+[32m+[m[32m    if(isBalanced)cout<<"Balanced";[m
+[32m+[m[32m    else cout<<"Not Balanced...";[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/DSA/Trees/bottomView.cpp b/Prateek/DSA/Trees/bottomView.cpp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5216243[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/DSA/Trees/bottomView.cpp[m
+[36m@@ -0,0 +1,52 @@[m
+[32m+[m[32m#include<bits/stdc++.h>  // TREES[m
+[32m+[m[32musing namespace std;[m
+[32m+[m[32musing ll = long long;[m
+[32m+[m
+[32m+[m[32mclass TreeNode{[m
+[32m+[m[32m    public:[m
+[32m+[m[32m    int data;[m
+[32m+[m[32m    TreeNode* left;[m
+[32m+[m[32m    TreeNode* right;[m
+[32m+[m
+[32m+[m[32m    TreeNode(int data){[m
+[32m+[m[32m        this->data = data;[m
+[32m+[m[32m        left=right=NULL;[m
+[32m+[m[32m    }[m
+[32m+[m[32m};[m
+[32m+[m[41m [m
+[32m+[m[32mvoid topView(TreeNode* root){[m
+[32m+[m[32m    queue<pair<TreeNode*,int>>q;[m
+[32m+[m[32m    map<int,int>mpp;[m
+[32m+[m[32m    vector<int>ans;[m
+[32m+[m[32m    if(!root)return;[m
+[32m+[m[32m    q.push({root,0});[m
+[32m+[m[32m    while(!q.empty()){[m
+[32m+[m[32m        int n = q.size();[m
+[32m+[m[32m        for(int i = 0; i<n ;i++){[m
+[32m+[m[32m            TreeNode* node = q.front().first;[m
+[32m+[m[32m            int vertical = q.front().second;[m
+[32m+[m[32m            q.pop();[m
+[32m+[m[32m            if(node->left) q.push({node->left,vertical-1});[m
+[32m+[m[32m            if(node->right) q.push({node->right,vertical+1});[m
+[32m+[m[32m            mpp[vertical]=node->data;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m    for(auto i:mpp){[m
+[32m+[m[32m        ans.push_back(i.second);[m
+[32m+[m[32m    }[m
+[32m+[m[32m    for(auto i:ans)cout<<i<<" ";[m
+[32m+[m[32m    cout<<endl;[m
+[32m+[m[32m}[m
+[32m+[m[32mint main (){[m
+[32m+[m[32m    TreeNode* root = new TreeNode(1);[m
+[32m+[m[32m    root->left = new TreeNode(2);[m
+[32m+[m[32m    root->left->left = new TreeNode(4);[m
+[32m+[m[32m    root->left->right = new TreeNode(5);[m
+[32m+[m[32m    root->left->right->left = new TreeNode(6);[m
+[32m+[m[32m    root->right = new TreeNode(3);[m
+[32m+[m[32m    root->right->left = new TreeNode(7);[m
+[32m+[m[32m    root->right->right = new TreeNode(8);[m
+[32m+[m[32m    root->right->right->left = new TreeNode(9);[m
+[32m+[m[32m    root->right->right->right = new TreeNode(10);[m
+[32m+[m[32m    topView(root);[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/DSA/Trees/boundaryTraversal.cpp b/Prateek/DSA/Trees/boundaryTraversal.cpp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f0efe9c[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/DSA/Trees/boundaryTraversal.cpp[m
+[36m@@ -0,0 +1,80 @@[m
+[32m+[m[32m#include<bits/stdc++.h>  // TREES[m
+[32m+[m[32musing namespace std;[m
+[32m+[m[32musing ll = long long;[m
+[32m+[m
+[32m+[m[32mclass TreeNode{[m
+[32m+[m[32m    public:[m
+[32m+[m[32m    int data;[m
+[32m+[m[32m    TreeNode* left;[m
+[32m+[m[32m    TreeNode* right;[m
+[32m+[m
+[32m+[m[32m    TreeNode(int data){[m
+[32m+[m[32m        this->data = data;[m
+[32m+[m[32m        left=right=NULL;[m
+[32m+[m[32m    }[m
+[32m+[m[32m};[m
+[32m+[m[41m [m
+[32m+[m[32mvector<int> ans;[m
+[32m+[m[32mbool isLeaf(TreeNode* root){[m
+[32m+[m[32m    if(!root->left&&!root->right)return true;[m
+[32m+[m[32m    return false;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid addLeftNodes(TreeNode* root){[m
+[32m+[m[32m    TreeNode* node = root->left;[m
+[32m+[m[32m    while(node){[m
+[32m+[m[32m        if(!isLeaf(node))[m
+[32m+[m[32m        ans.push_back(node->data);[m
+[32m+[m[32m        if(node->left) node = node->left;[m
+[32m+[m[32m        else node = node->right;[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid addleaf(TreeNode* root){[m
+[32m+[m[32m    if(isLeaf(root)) {[m
+[32m+[m[32m        ans.push_back(root->data);[m
+[32m+[m[32m        return;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    if(root->left)addleaf(root->left);[m
+[32m+[m[32m    if(root->right)addleaf(root->right);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid addRightNodes(TreeNode* root){[m
+[32m+[m[32m    TreeNode* node = root->right;[m
+[32m+[m[32m    vector<int>temp;[m
+[32m+[m[32m    while(node){[m
+[32m+[m[32m        if(!isLeaf(node)) temp.push_back(node->data);[m
+[32m+[m[32m        if(node->right) node = node->right;[m
+[32m+[m[32m        else node = node->left;[m[41m [m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    for(int i = temp.size()-1; i>=0; i--)[m
+[32m+[m[32m    ans.push_back(temp[i]);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid boundaryTraversal(TreeNode* root){[m
+[32m+[m[32m    if(!root) return;[m
+[32m+[m[32m    if(isLeaf(root)) {cout<<root->data;return;}[m
+[32m+[m[32m    ans.push_back(root->data);[m
+[32m+[m[32m    addLeftNodes(root);[m
+[32m+[m[32m    addleaf(root);[m
+[32m+[m[32m    addRightNodes(root);[m
+[32m+[m[32m    for(auto i:ans)cout<<i<<" ";[m
+[32m+[m[32m    cout<<endl;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32mint main (){[m
+[32m+[m[32m    TreeNode* root = new TreeNode(1);[m
+[32m+[m[32m    root->left = new TreeNode(2);[m
+[32m+[m[32m    root->left->left = new TreeNode(4);[m
+[32m+[m[32m    root->left->right = new TreeNode(5);[m
+[32m+[m[32m    root->left->right->left = new TreeNode(6);[m
+[32m+[m[32m    root->right = new TreeNode(3);[m
+[32m+[m[32m    root->right->left = new TreeNode(7);[m
+[32m+[m[32m    root->right->right = new TreeNode(8);[m
+[32m+[m[32m    root->right->right->left = new TreeNode(9);[m
+[32m+[m[32m    root->right->right->right = new TreeNode(10);[m
+[32m+[m[32m    boundaryTraversal(root);[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/DSA/Trees/diameterOfBT.cpp b/Prateek/DSA/Trees/diameterOfBT.cpp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e858c4f[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/DSA/Trees/diameterOfBT.cpp[m
+[36m@@ -0,0 +1,44 @@[m
+[32m+[m[32m#include<bits/stdc++.h>  // TREES[m
+[32m+[m[32musing namespace std;[m
+[32m+[m[32musing ll = long long;[m
+[32m+[m
+[32m+[m[32mclass TreeNode{[m
+[32m+[m[32m    public:[m
+[32m+[m[32m    int data;[m
+[32m+[m[32m    TreeNode* left;[m
+[32m+[m[32m    TreeNode* right;[m
+[32m+[m
+[32m+[m[32m    TreeNode(int data){[m
+[32m+[m[32m        this->data = data;[m
+[32m+[m[32m        left=right=NULL;[m
+[32m+[m[32m    }[m
+[32m+[m[32m};[m
+[32m+[m
+[32m+[m[32mint maxi = INT_MIN;[m
+[32m+[m
+[32m+[m[32mint findHeight(TreeNode* root){[m
+[32m+[m[32m    if(root==NULL)return 0;[m
+[32m+[m[32m    int left = findHeight(root->left);[m
+[32m+[m[32m    int right = findHeight(root->right);[m
+[32m+[m[32m    maxi = max(left+right,maxi);[m
+[32m+[m[32m    return 1+max(left,right);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid findDiameter(TreeNode* root){[m
+[32m+[m[32m    int dia = findHeight(root);[m
+[32m+[m[32m    cout<<"Diameter : "<<maxi<<endl;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mint main (){[m
+[32m+[m[32m    TreeNode* root = new TreeNode(1);[m
+[32m+[m[32m    root->left = new TreeNode(2);[m
+[32m+[m[32m    root->left->left = new TreeNode(4);[m
+[32m+[m[32m    root->left->right = new TreeNode(5);[m
+[32m+[m[32m    root->left->right->left = new TreeNode(6);[m
+[32m+[m[32m    root->right = new TreeNode(3);[m
+[32m+[m[32m    root->right->left = new TreeNode(7);[m
+[32m+[m[32m    root->right->right = new TreeNode(8);[m
+[32m+[m[32m    root->right->right->left = new TreeNode(9);[m
+[32m+[m[32m    root->right->right->right = new TreeNode(10);[m
+[32m+[m[32m    findDiameter(root);[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/DSA/Trees/identical.cpp b/Prateek/DSA/Trees/identical.cpp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9c58586[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/DSA/Trees/identical.cpp[m
+[36m@@ -0,0 +1,36 @@[m
+[32m+[m[32m#include<bits/stdc++.h>  // TREES[m
+[32m+[m[32musing namespace std;[m
+[32m+[m[32musing ll = long long;[m
+[32m+[m
+[32m+[m[32mclass TreeNode{[m
+[32m+[m[32m    public:[m
+[32m+[m[32m    int data;[m
+[32m+[m[32m    TreeNode* left;[m
+[32m+[m[32m    TreeNode* right;[m
+[32m+[m
+[32m+[m[32m    TreeNode(int data){[m
+[32m+[m[32m        this->data = data;[m
+[32m+[m[32m        left=right=NULL;[m
+[32m+[m[32m    }[m
+[32m+[m[32m};[m
+[32m+[m[41m [m
+[32m+[m[32mbool isIdentical(TreeNode* p , TreeNode* q){[m
+[32m+[m[32m    if(!p||!q){[m
+[32m+[m[32m        return (p==q);[m
+[32m+[m[32m    }[m
+[32m+[m[32m    if(p->data!=q->data)return false;[m
+[32m+[m[32m    return (p->left,q->left)&&(p->right,q->right);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mint main (){[m
+[32m+[m[32m    TreeNode* root = new TreeNode(1);[m
+[32m+[m[32m    root->left = new TreeNode(2);[m
+[32m+[m[32m    root->left->left = new TreeNode(4);[m
+[32m+[m[32m    root->left->right = new TreeNode(5);[m
+[32m+[m[32m    root->left->right->left = new TreeNode(6);[m
+[32m+[m[32m    root->right = new TreeNode(3);[m
+[32m+[m[32m    root->right->left = new TreeNode(7);[m
+[32m+[m[32m    root->right->right = new TreeNode(8);[m
+[32m+[m[32m    root->right->right->left = new TreeNode(9);[m
+[32m+[m[32m    root->right->right->right = new TreeNode(10);[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/DSA/Trees/maxDepth.cpp b/Prateek/DSA/Trees/maxDepth.cpp[m
+[1mindex 8d3f58a..dab551d 100644[m
+[1m--- a/Prateek/DSA/Trees/maxDepth.cpp[m
+[1m+++ b/Prateek/DSA/Trees/maxDepth.cpp[m
+[36m@@ -15,7 +15,12 @@[m [mclass TreeNode{[m
+ };[m
+  [m
+ int maxDepth(TreeNode* root){[m
+[31m-    [m
+[32m+[m[32m    int ans = 0;[m
+[32m+[m[32m    if(root==NULL) return 0;[m[41m   [m
+[32m+[m[32m    int left = maxDepth(root->left);[m
+[32m+[m[32m    int right = maxDepth(root->right);[m
+[32m+[m[32m    ans = 1 + max(left,right);[m
+[32m+[m[32m    return ans;[m
+ }[m
+ [m
+ int main (){[m
+[36m@@ -29,4 +34,5 @@[m [mint main (){[m
+     root->right->right = new TreeNode(8);[m
+     root->right->right->left = new TreeNode(9);[m
+     root->right->right->right = new TreeNode(10);[m
+[32m+[m[32m    cout<<maxDepth(root);[m
+ }[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/DSA/Trees/maxPathSum.cpp b/Prateek/DSA/Trees/maxPathSum.cpp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d0d96f0[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/DSA/Trees/maxPathSum.cpp[m
+[36m@@ -0,0 +1,32 @@[m
+[32m+[m[32m#include<bits/stdc++.h>  // TREES[m
+[32m+[m[32musing namespace std;[m
+[32m+[m[32musing ll = long long;[m
+[32m+[m
+[32m+[m[32mclass TreeNode{[m
+[32m+[m[32m    public:[m
+[32m+[m[32m    int data;[m
+[32m+[m[32m    TreeNode* left;[m
+[32m+[m[32m    TreeNode* right;[m
+[32m+[m
+[32m+[m[32m    TreeNode(int data){[m
+[32m+[m[32m        this->data = data;[m
+[32m+[m[32m        left=right=NULL;[m
+[32m+[m[32m    }[m
+[32m+[m[32m};[m
+[32m+[m[41m [m
+[32m+[m[32mint maxSum(TreeNode* root, int &maxi){[m
+[32m+[m[32m    if(root==nullptr)return 0;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mint main (){[m
+[32m+[m[32m    TreeNode* root = new TreeNode(1);[m
+[32m+[m[32m    root->left = new TreeNode(2);[m
+[32m+[m[32m    root->left->left = new TreeNode(4);[m
+[32m+[m[32m    root->left->right = new TreeNode(5);[m
+[32m+[m[32m    root->left->right->left = new TreeNode(6);[m
+[32m+[m[32m    root->right = new TreeNode(3);[m
+[32m+[m[32m    root->right->left = new TreeNode(7);[m
+[32m+[m[32m    root->right->right = new TreeNode(8);[m
+[32m+[m[32m    root->right->right->left = new TreeNode(9);[m
+[32m+[m[32m    root->right->right->right = new TreeNode(10);[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/DSA/Trees/recursiveTraversal.cpp b/Prateek/DSA/Trees/recursiveTraversal.cpp[m
+[1mindex 3c95a02..17dd613 100644[m
+[1m--- a/Prateek/DSA/Trees/recursiveTraversal.cpp[m
+[1m+++ b/Prateek/DSA/Trees/recursiveTraversal.cpp[m
+[36m@@ -56,7 +56,7 @@[m [mvoid levelorder(TreeNode* root){[m
+         for(int j = 0 ;j<ans[i].size(); j++){[m
+             cout<<ans[i][j]<<"  ";[m
+         }[m
+[31m-        // cout<<endl;[m
+[32m+[m[32m        cout<<endl;[m
+     }[m
+ }[m
+ [m
+[36m@@ -71,15 +71,15 @@[m [mint main (){[m
+     root->right->right = new TreeNode(8);[m
+     root->right->right->left = new TreeNode(9);[m
+     root->right->right->right = new TreeNode(10);[m
+[31m-    cout<<"Preorder: ";[m
+[31m-    preorder(root);[m
+[31m-    cout<<"\n";[m
+[31m-    cout<<"Inorder: ";[m
+[31m-    inorder(root);[m
+[31m-    cout<<"\n";[m
+[31m-    cout<<"Postorder: ";[m
+[31m-    postorder(root);[m
+[31m-    cout<<"\n";[m
+[31m-    cout<<"Levelorder: ";[m
+[32m+[m[32m    // cout<<"Preorder: ";[m
+[32m+[m[32m    // preorder(root);[m
+[32m+[m[32m    // cout<<"\n";[m
+[32m+[m[32m    // cout<<"Inorder: ";[m
+[32m+[m[32m    // inorder(root);[m
+[32m+[m[32m    // cout<<"\n";[m
+[32m+[m[32m    // cout<<"Postorder: ";[m
+[32m+[m[32m    // postorder(root);[m
+[32m+[m[32m    // cout<<"\n";[m
+[32m+[m[32m    cout<<"Levelorder: "<<endl;[m
+     levelorder(root);[m
+ }[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/DSA/Trees/rightView.cpp b/Prateek/DSA/Trees/rightView.cpp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..134003b[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/DSA/Trees/rightView.cpp[m
+[36m@@ -0,0 +1,59 @@[m
+[32m+[m[32m#include<bits/stdc++.h>  // TREES[m
+[32m+[m[32musing namespace std;[m
+[32m+[m[32musing ll = long long;[m
+[32m+[m
+[32m+[m[32mclass TreeNode{[m
+[32m+[m[32m    public:[m
+[32m+[m[32m    int val;[m
+[32m+[m[32m    TreeNode* left;[m
+[32m+[m[32m    TreeNode* right;[m
+[32m+[m
+[32m+[m[32m    TreeNode(int data){[m
+[32m+[m[32m        this->val = data;[m
+[32m+[m[32m        left=right=NULL;[m
+[32m+[m[32m    }[m
+[32m+[m[32m};[m
+[32m+[m[32mint size = 0;[m
+[32m+[m[32mvoid topView(TreeNode* root, int &level){[m
+[32m+[m[32m    if(!root) return;[m
+[32m+[m[32m    if(size==level){cout<<root->val<<" ";size++;}[m
+[32m+[m[32m    topView(root->right,level++);[m
+[32m+[m[32m    topView(root->left,level++);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvoid rightView(TreeNode* root){[m
+[32m+[m[32m    queue<pair<TreeNode*,int>>q;[m
+[32m+[m[32m    vector<int>ans;[m
+[32m+[m[32m    map<int,int>mpp;[m
+[32m+[m[32m    if(!root)return;[m
+[32m+[m[32m    q.push({root,0});[m
+[32m+[m[32m    while(!q.empty()){[m
+[32m+[m[32m        int n = q.size();[m
+[32m+[m[32m        for(int i = 0; i<n; i++){[m
+[32m+[m[32m            TreeNode* node = q.front().first;[m
+[32m+[m[32m            int level = q.front().second;[m
+[32m+[m[32m            q.pop();[m
+[32m+[m[32m            if(mpp.find(level)==mpp.end()){[m
+[32m+[m[32m                mpp[level]=node->val;[m
+[32m+[m[32m            }[m
+[32m+[m[32m            if(node->right) q.push({node->right,level+1});[m
+[32m+[m[32m            if(node->left) q.push({node->left,level+1});[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m    for(auto i:mpp)cout<<i.second<<" ";[m
+[32m+[m[32m    cout<<endl;[m
+[32m+[m[32m}[m
+[32m+[m[32mint main (){[m
+[32m+[m[32m    TreeNode* root = new TreeNode(1);[m
+[32m+[m[32m    root->left = new TreeNode(2);[m
+[32m+[m[32m    root->left->left = new TreeNode(4);[m
+[32m+[m[32m    root->left->right = new TreeNode(5);[m
+[32m+[m[32m    root->left->right->left = new TreeNode(6);[m
+[32m+[m[32m    root->right = new TreeNode(3);[m
+[32m+[m[32m    root->right->left = new TreeNode(7);[m
+[32m+[m[32m    root->right->right = new TreeNode(8);[m
+[32m+[m[32m    root->right->right->left = new TreeNode(9);[m
+[32m+[m[32m    root->right->right->right = new TreeNode(10);[m
+[32m+[m[32m    topView(root,0);[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/DSA/Trees/rootToNode.cpp b/Prateek/DSA/Trees/rootToNode.cpp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a11dd26[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/DSA/Trees/rootToNode.cpp[m
+[36m@@ -0,0 +1,45 @@[m
+[32m+[m[32m#include<bits/stdc++.h>  // TREES[m
+[32m+[m[32musing namespace std;[m
+[32m+[m[32musing ll = long long;[m
+[32m+[m
+[32m+[m[32mclass TreeNode{[m
+[32m+[m[32m    public:[m
+[32m+[m[32m    int data;[m
+[32m+[m[32m    TreeNode* left;[m
+[32m+[m[32m    TreeNode* right;[m
+[32m+[m
+[32m+[m[32m    TreeNode(int data){[m
+[32m+[m[32m        this->data = data;[m
+[32m+[m[32m        left=right=NULL;[m
+[32m+[m[32m    }[m
+[32m+[m[32m};[m
+[32m+[m[41m [m
+[32m+[m[32mbool rootToNode(TreeNode* root, int x, vector<int>&nums){[m
+[32m+[m[32m    if(!root) return false;[m
+[32m+[m[32m    nums.push_back(root->data);[m
+[32m+[m[32m    if(root->data==x) return true;[m
+[32m+[m[32m    bool left = rootToNode(root->left,x,nums);[m
+[32m+[m[32m    bool right = rootToNode(root->right,x,nums);[m
+[32m+[m[32m    if(!left&&!right){[m
+[32m+[m[32m        nums.pop_back();[m
+[32m+[m[32m        return false;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    return true;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mint main (){[m
+[32m+[m[32m    TreeNode* root = new TreeNode(1);[m
+[32m+[m[32m    root->left = new TreeNode(2);[m
+[32m+[m[32m    root->left->left = new TreeNode(4);[m
+[32m+[m[32m    root->left->right = new TreeNode(5);[m
+[32m+[m[32m    root->left->right->left = new TreeNode(6);[m
+[32m+[m[32m    root->right = new TreeNode(3);[m
+[32m+[m[32m    root->right->left = new TreeNode(7);[m
+[32m+[m[32m    root->right->right = new TreeNode(8);[m
+[32m+[m[32m    root->right->right->left = new TreeNode(9);[m
+[32m+[m[32m    root->right->right->right = new TreeNode(10);[m
+[32m+[m[32m    vector<int>nums;[m
+[32m+[m[32m    rootToNode(root,9,nums);[m[41m [m
+[32m+[m[32m    for(auto i:nums)cout<<i<<" ";[m
+[32m+[m[32m    cout<<endl;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/DSA/Trees/symmetricalBT.cpp b/Prateek/DSA/Trees/symmetricalBT.cpp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f0cdfcb[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/DSA/Trees/symmetricalBT.cpp[m
+[36m@@ -0,0 +1,43 @@[m
+[32m+[m[32m#include<bits/stdc++.h>  // TREES[m
+[32m+[m[32musing namespace std;[m
+[32m+[m[32musing ll = long long;[m
+[32m+[m
+[32m+[m[32mclass TreeNode{[m
+[32m+[m[32m    public:[m
+[32m+[m[32m    int data;[m
+[32m+[m[32m    TreeNode* left;[m
+[32m+[m[32m    TreeNode* right;[m
+[32m+[m
+[32m+[m[32m    TreeNode(int data){[m
+[32m+[m[32m        this->data = data;[m
+[32m+[m[32m        left=right=NULL;[m
+[32m+[m[32m    }[m
+[32m+[m[32m};[m
+[32m+[m[41m [m
+[32m+[m[32mbool traverse(TreeNode* r1, TreeNode* r2){[m
+[32m+[m[32m    if(!r1||!r2) return r1==r2;[m
+[32m+[m[32m    if(r1->data!=r2->data)return false;[m
+[32m+[m[32m    return traverse(r1->left,r2->right)&&traverse(r1->right,r2->left);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mbool isSymmetric(TreeNode* root) {[m
+[32m+[m[32m    if(!root)return true;[m
+[32m+[m[32m    return traverse(root->left, root->right);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mint main (){[m
+[32m+[m[32m    TreeNode* root = new TreeNode(1);[m
+[32m+[m[32m    root->left = new TreeNode(2);[m
+[32m+[m[32m    root->left->left = new TreeNode(4);[m
+[32m+[m[32m    root->left->right = new TreeNode(5);[m
+[32m+[m[32m    root->left->right->left = new TreeNode(6);[m
+[32m+[m[32m    root->right = new TreeNode(3);[m
+[32m+[m[32m    root->right->left = new TreeNode(7);[m
+[32m+[m[32m    root->right->right = new TreeNode(8);[m
+[32m+[m[32m    root->right->right->left = new TreeNode(9);[m
+[32m+[m[32m    root->right->right->right = new TreeNode(10);[m
+[32m+[m[32m    if(isSymmetric(root)){[m
+[32m+[m[32m        cout<<"Symmetric"<<endl;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    else cout<<"Not symmetric.."<<endl;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/DSA/Trees/topView.cpp b/Prateek/DSA/Trees/topView.cpp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c57ea6b[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/DSA/Trees/topView.cpp[m
+[36m@@ -0,0 +1,53 @@[m
+[32m+[m[32m#include<bits/stdc++.h>  // TREES[m
+[32m+[m[32musing namespace std;[m
+[32m+[m[32musing ll = long long;[m
+[32m+[m
+[32m+[m[32mclass TreeNode{[m
+[32m+[m[32m    public:[m
+[32m+[m[32m    int data;[m
+[32m+[m[32m    TreeNode* left;[m
+[32m+[m[32m    TreeNode* right;[m
+[32m+[m
+[32m+[m[32m    TreeNode(int data){[m
+[32m+[m[32m        this->data = data;[m
+[32m+[m[32m        left=right=NULL;[m
+[32m+[m[32m    }[m
+[32m+[m[32m};[m
+[32m+[m[41m [m
+[32m+[m[32mvoid topView(TreeNode* root){[m
+[32m+[m[32m    queue<pair<TreeNode*,int>>q;[m
+[32m+[m[32m    map<int,int>mpp;[m
+[32m+[m[32m    vector<int>ans;[m
+[32m+[m[32m    if(!root)return;[m
+[32m+[m[32m    q.push({root,0});[m
+[32m+[m[32m    while(!q.empty()){[m
+[32m+[m[32m        int n = q.size();[m
+[32m+[m[32m        for(int i = 0; i<n ;i++){[m
+[32m+[m[32m            TreeNode* node = q.front().first;[m
+[32m+[m[32m            int vertical = q.front().second;[m
+[32m+[m[32m            q.pop();[m
+[32m+[m[32m            if(node->left) q.push({node->left,vertical-1});[m
+[32m+[m[32m            if(node->right) q.push({node->right,vertical+1});[m
+[32m+[m[32m            if(mpp.find(vertical)==mpp.end())[m
+[32m+[m[32m            mpp[vertical]=node->data;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m    for(auto i:mpp){[m
+[32m+[m[32m        ans.push_back(i.second);[m
+[32m+[m[32m    }[m
+[32m+[m[32m    for(auto i:ans)cout<<i<<" ";[m
+[32m+[m[32m    cout<<endl;[m
+[32m+[m[32m}[m
+[32m+[m[32mint main (){[m
+[32m+[m[32m    TreeNode* root = new TreeNode(1);[m
+[32m+[m[32m    root->left = new TreeNode(2);[m
+[32m+[m[32m    root->left->left = new TreeNode(4);[m
+[32m+[m[32m    root->left->right = new TreeNode(5);[m
+[32m+[m[32m    root->left->right->left = new TreeNode(6);[m
+[32m+[m[32m    root->right = new TreeNode(3);[m
+[32m+[m[32m    root->right->left = new TreeNode(7);[m
+[32m+[m[32m    root->right->right = new TreeNode(8);[m
+[32m+[m[32m    root->right->right->left = new TreeNode(9);[m
+[32m+[m[32m    root->right->right->right = new TreeNode(10);[m
+[32m+[m[32m    topView(root);[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/DSA/Trees/vertivalTraversal.cpp b/Prateek/DSA/Trees/vertivalTraversal.cpp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e2a6fed[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/DSA/Trees/vertivalTraversal.cpp[m
+[36m@@ -0,0 +1,60 @@[m
+[32m+[m[32m#include<bits/stdc++.h>  // TREES[m
+[32m+[m[32musing namespace std;[m
+[32m+[m[32musing ll = long long;[m
+[32m+[m
+[32m+[m[32mclass TreeNode{[m
+[32m+[m[32m    public:[m
+[32m+[m[32m    int data;[m
+[32m+[m[32m    TreeNode* left;[m
+[32m+[m[32m    TreeNode* right;[m
+[32m+[m
+[32m+[m[32m    TreeNode(int data){[m
+[32m+[m[32m        this->data = data;[m
+[32m+[m[32m        left=right=NULL;[m
+[32m+[m[32m    }[m
+[32m+[m[32m};[m
+[32m+[m[41m [m
+[32m+[m[32mvoid verticalTraversal(TreeNode* root){[m
+[32m+[m[32m    map<int,map<int,multiset<int>>>mpp;[m
+[32m+[m[32m    queue<pair<TreeNode*,pair<int,int>>>q;[m
+[32m+[m[32m    if(!root)return;[m
+[32m+[m[32m    q.push({root,{0,0}});[m
+[32m+[m[32m    while(!q.empty()){[m
+[32m+[m[32m        int size = q.size();[m
+[32m+[m[32m        for(int i = 0; i<size; i++){[m
+[32m+[m[32m            TreeNode* node = q.front().first;[m
+[32m+[m[32m            int level = q.front().second.second;[m
+[32m+[m[32m            int vertical = q.front().second.first;[m
+[32m+[m[32m            mpp[vertical][level].insert(node->data);[m
+[32m+[m[32m            q.pop();[m
+[32m+[m[32m            if(node->left){[m
+[32m+[m[32m                q.push({node->left,{vertical-1,level+1}});[m
+[32m+[m[32m            }[m
+[32m+[m[32m            if(node->right) q.push({node->right,{vertical+1,level+1}});[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m    for(auto it:mpp){[m
+[32m+[m[32m        auto two = it.second;[m
+[32m+[m[32m        for(auto temp:two){[m
+[32m+[m[32m            for(auto i:temp.second){[m
+[32m+[m[32m                cout<<i<<" ";[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m        cout<<endl;[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32mint main (){[m
+[32m+[m[32m    TreeNode* root = new TreeNode(1);[m
+[32m+[m[32m    root->left = new TreeNode(2);[m
+[32m+[m[32m    root->left->left = new TreeNode(4);[m
+[32m+[m[32m    root->left->right = new TreeNode(5);[m
+[32m+[m[32m    root->left->right->left = new TreeNode(6);[m
+[32m+[m[32m    root->right = new TreeNode(3);[m
+[32m+[m[32m    root->right->left = new TreeNode(7);[m
+[32m+[m[32m    root->right->right = new TreeNode(8);[m
+[32m+[m[32m    root->right->right->left = new TreeNode(9);[m
+[32m+[m[32m    root->right->right->right = new TreeNode(10);[m
+[32m+[m[32m    verticalTraversal(root);[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/DSA/Trees/zigzagTraversal.cpp b/Prateek/DSA/Trees/zigzagTraversal.cpp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f0d705e[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/DSA/Trees/zigzagTraversal.cpp[m
+[36m@@ -0,0 +1,58 @@[m
+[32m+[m[32m#include<bits/stdc++.h>  // TREES[m
+[32m+[m[32musing namespace std;[m
+[32m+[m[32musing ll = long long;[m
+[32m+[m
+[32m+[m[32mclass TreeNode{[m
+[32m+[m[32m    public:[m
+[32m+[m[32m    int data;[m
+[32m+[m[32m    TreeNode* left;[m
+[32m+[m[32m    TreeNode* right;[m
+[32m+[m
+[32m+[m[32m    TreeNode(int data){[m
+[32m+[m[32m        this->data = data;[m
+[32m+[m[32m        left=right=NULL;[m
+[32m+[m[32m    }[m
+[32m+[m[32m};[m
+[32m+[m[41m [m
+[32m+[m[32mvoid zigZag(TreeNode* root){[m
+[32m+[m[32m    vector<vector<int>>ans;[m
+[32m+[m[32m    if(!root) return ;[m
+[32m+[m[32m    queue<TreeNode*>q;[m
+[32m+[m[32m    q.push(root);[m
+[32m+[m[32m    bool leftToRight = true;[m
+[32m+[m[32m    while(!q.empty()){[m
+[32m+[m[32m        int size = q.size();[m
+[32m+[m[32m        vector<int>level(size);[m
+[32m+[m[32m        for(int i = 0; i<size; i++){[m
+[32m+[m[32m            TreeNode* node = q.front();[m
+[32m+[m[32m            q.pop();[m
+[32m+[m[32m            if(node->left)q.push(node->left);[m
+[32m+[m[32m            if(node->right)q.push(node->right);[m
+[32m+[m[32m            int index = leftToRight? i:size-i-1;[m
+[32m+[m[32m            level[index]=node->data;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        ans.push_back(level);[m
+[32m+[m[32m        leftToRight = !leftToRight;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    for(int i = 0; i<ans.size(); i++){[m
+[32m+[m[32m        for(int j = 0; j<ans[i].size(); j++){[m
+[32m+[m[32m            cout<<ans[i][j]<<" ";[m
+[32m+[m[32m        }[m
+[32m+[m[32m        cout<<endl;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mint main (){[m
+[32m+[m[32m    TreeNode* root = new TreeNode(1);[m
+[32m+[m[32m    root->left = new TreeNode(2);[m
+[32m+[m[32m    root->left->left = new TreeNode(4);[m
+[32m+[m[32m    root->left->right = new TreeNode(5);[m
+[32m+[m[32m    root->left->right->left = new TreeNode(6);[m
+[32m+[m[32m    root->right = new TreeNode(3);[m
+[32m+[m[32m    root->right->left = new TreeNode(7);[m
+[32m+[m[32m    root->right->right = new TreeNode(8);[m
+[32m+[m[32m    root->right->right->left = new TreeNode(9);[m
+[32m+[m[32m    root->right->right->right = new TreeNode(10);[m
+[32m+[m[32m    zigZag(root);[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/E_MEX_Count.cpp b/Prateek/E_MEX_Count.cpp[m
+[1mdeleted file mode 100644[m
+[1mindex 24ebd6a..0000000[m
+[1m--- a/Prateek/E_MEX_Count.cpp[m
+[1m+++ /dev/null[m
+[36m@@ -1,99 +0,0 @@[m
+[31m-#include <bits/stdc++.h> // includes most STL headers:contentReference[oaicite:0]{index=0}[m
+[31m-using namespace std;[m
+[31m-[m
+[31m-// Common type aliases[m
+[31m-typedef long long ll;[m
+[31m-typedef unsigned long long ull;[m
+[31m-typedef long double ld;[m
+[31m-typedef pair<int,int> pii;[m
+[31m-typedef pair<ll,ll> pll;[m
+[31m-typedef vector<int> vi;[m
+[31m-typedef vector<ll> vll;[m
+[31m-[m
+[31m-// Macros for convenience[m
+[31m-#define all(x) (x).begin(), (x).end()        // shorthand for begin/end:contentReference[oaicite:1]{index=1}[m
+[31m-#define sz(x) ((int)(x).size())[m
+[31m-#define fi first                           // shorthand for pair.first:contentReference[oaicite:2]{index=2}[m
+[31m-#define se second                          // shorthand for pair.second:contentReference[oaicite:3]{index=3}[m
+[31m-#define mp make_pair                       // shorthand for make_pair:contentReference[oaicite:4]{index=4}[m
+[31m-#define pb push_back                       // shorthand for push_back:contentReference[oaicite:5]{index=5}[m
+[31m-#define eb emplace_back                    // shorthand for emplace_back[m
+[31m-#define rep(i,a,b) for(int i=(a); i<(b); ++i)[m
+[31m-#define per(i,a,b) for(int i=(a); i>=(b); --i)[m
+[31m-[m
+[31m-// Debugging (prints only when not online judge):contentReference[oaicite:6]{index=6}[m
+[31m-#ifndef ONLINE_JUDGE[m
+[31m-  #define debug(x) cerr << #x << " = " << (x) << '\n'[m
+[31m-#else[m
+[31m-  #define debug(x) // no-op[m
+[31m-#endif[m
+[31m-[m
+[31m-// Random number generator (seeded with high-res clock):contentReference[oaicite:7]{index=7}[m
+[31m-mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());[m
+[31m-[m
+[31m-// Utility functions[m
+[31m-ll gcd(ll a, ll b) { // greatest common divisor[m
+[31m-    return b ? gcd(b, a % b) : a;[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[31m-void solve(){[m
+[31m-    ll n;[m
+[31m-    cin>>n;[m
+[31m-    vll nums(n);[m
+[31m-    map<ll,ll>mpp;[m
+[31m-    per(i,0,n) {[m
+[31m-        cin>>nums[i];[m
+[31m-        mpp[nums[i]]++;[m
+[31m-    }[m
+[31m-    sort(all(nums));[m
+[31m-[m
+[31m-    ll k = 0;[m
+[31m-    ll cnt0 = 0;[m
+[31m-    vll ans;[m
+[31m-    if(mpp.find(0)!=mpp.end()) cnt0 = mpp[0];[m
+[31m-    while(k!=n){[m
+[31m-        ll cnt = 0;[m
+[31m-        if(cnt0>=k){[m
+[31m-            ans.pb(1);[m
+[31m-            k++;[m
+[31m-            continue;[m
+[31m-        }[m
+[31m-        map<ll,ll>temp = mpp;[m
+[31m-        ll mini = 0;[m
+[31m-        for(auto i:temp){[m
+[31m-            int val = i.fi;[m
+[31m-            int freq = i.se;[m
+[31m-            if(val>=mini+1){[m
+[31m-                cnt+=freq;[m
+[31m-                mini = val;[m
+[31m-            }[m
+[31m-            else{[m
+[31m-                mini = val;[m
+[31m-            }[m
+[31m-        }    [m
+[31m-        ans.pb(cnt);[m
+[31m-        k++;[m
+[31m-    }[m
+[31m-    rep(i,0,sz(ans)) cout<<ans[i]<<" ";[m
+[31m-    cout<<1<<endl;[m
+[31m-[m
+[31m-}[m
+[31m-[m
+[31m-int main(){[m
+[31m-    ios::sync_with_stdio(false); // fast I/O:contentReference[oaicite:11]{index=11}[m
+[31m-    cin.tie(NULL);[m
+[31m-[m
+[31m-    #ifndef ONLINE_JUDGE[m
+[31m-    // For local testing: redirect input/output to files[m
+[31m-    //freopen("input.txt", "r", stdin);[m
+[31m-    //freopen("output.txt", "w", stdout);[m
+[31m-    #endif[m
+[31m-[m
+[31m-    int T = 1;[m
+[31m-    cin >> T;[m
+[31m-    while(T--){[m
+[31m-        solve();[m
+[31m-    }[m
+[31m-    return 0;[m
+[31m-}[m
+[1mdiff --git a/Prateek/Web-Development/Practice/Basics/Images/1.png b/Prateek/Web-Development/Practice/Basics/Images/1.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..65ba27a[m
+Binary files /dev/null and b/Prateek/Web-Development/Practice/Basics/Images/1.png differ
+[1mdiff --git a/Prateek/Web-Development/Practice/Basics/Images/2.png b/Prateek/Web-Development/Practice/Basics/Images/2.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4744968[m
+Binary files /dev/null and b/Prateek/Web-Development/Practice/Basics/Images/2.png differ
+[1mdiff --git a/Prateek/Web-Development/Practice/Basics/Images/3.png b/Prateek/Web-Development/Practice/Basics/Images/3.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2ab2448[m
+Binary files /dev/null and b/Prateek/Web-Development/Practice/Basics/Images/3.png differ
+[1mdiff --git a/Prateek/Web-Development/Practice/Basics/Images/4.png b/Prateek/Web-Development/Practice/Basics/Images/4.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ceaaaf5[m
+Binary files /dev/null and b/Prateek/Web-Development/Practice/Basics/Images/4.png differ
+[1mdiff --git a/Prateek/Web-Development/Practice/Basics/Images/5.png b/Prateek/Web-Development/Practice/Basics/Images/5.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..251ae3d[m
+Binary files /dev/null and b/Prateek/Web-Development/Practice/Basics/Images/5.png differ
+[1mdiff --git a/Prateek/Web-Development/Practice/Basics/Images/6.png b/Prateek/Web-Development/Practice/Basics/Images/6.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..29b6a1e[m
+Binary files /dev/null and b/Prateek/Web-Development/Practice/Basics/Images/6.png differ
+[1mdiff --git a/Prateek/Web-Development/Practice/Basics/Images/7.png b/Prateek/Web-Development/Practice/Basics/Images/7.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bb34771[m
+Binary files /dev/null and b/Prateek/Web-Development/Practice/Basics/Images/7.png differ
+[1mdiff --git a/Prateek/Web-Development/Practice/Basics/Images/8.png b/Prateek/Web-Development/Practice/Basics/Images/8.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2dc290a[m
+Binary files /dev/null and b/Prateek/Web-Development/Practice/Basics/Images/8.png differ
+[1mdiff --git a/Prateek/Web-Development/Practice/Basics/Images/9.png b/Prateek/Web-Development/Practice/Basics/Images/9.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..564794b[m
+Binary files /dev/null and b/Prateek/Web-Development/Practice/Basics/Images/9.png differ
+[1mdiff --git a/Prateek/Web-Development/Practice/Basics/index.html b/Prateek/Web-Development/Practice/Basics/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d1d5def[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/Web-Development/Practice/Basics/index.html[m
+[36m@@ -0,0 +1,58 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <link rel="stylesheet" href="styles.css">[m
+[32m+[m[32m    <title>Practice</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <div class="main-container">[m
+[32m+[m
+[32m+[m[32m        <!-- FIRST -->[m
+[32m+[m
+[32m+[m[32m        <div class="cnt">[m
+[32m+[m[32m            <h3 class="theme">Toggle Theme</h3>[m
+[32m+[m[32m            <h2 class="counter">0</h2>[m
+[32m+[m[32m            <div class="btn-flex">[m
+[32m+[m[32m                <button class="btn inc">+1</button>[m
+[32m+[m[32m                <button class="btn dec">-1</button>[m
+[32m+[m[32m                <button class="btn reset">Reset</button>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m        <!-- SECOND -->[m
+[32m+[m[41m        [m
+[32m+[m[32m        <div class="caseConverter">[m
+[32m+[m[32m            <p class="convert">Hello Wold, Click the button to convet casing of paragraph...</p><br>[m
+[32m+[m[32m            <div class="btn-flex">[m
+[32m+[m[32m                <button class="upper-case">UpperCase</button>[m
+[32m+[m[32m                <button class="lower-case">LowerCase</button>[m
+[32m+[m[32m                <button class="captilize">Captilize</button>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m        <!-- THIRD -->[m
+[32m+[m
+[32m+[m[32m        <div class="realTime-text">[m
+[32m+[m[32m            <input class="input-box" type="text" placeholder="Enter the text" style="display: inline-block; ;">[m
+[32m+[m[32m            <p class="letter-cnt" style="display: inline-block;">0</p>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m        <!-- FOURTH -->[m
+[32m+[m[32m         <div class="image-slider">[m
+[32m+[m[32m            <div class="images">[m
+[32m+[m[32m                <img src="./Images/1.png" alt="">[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="btn-flex">[m
+[32m+[m[32m                <button class="prev">Prev</button>[m
+[32m+[m[32m                <button class="next">Next</button>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m         </div>[m
+[32m+[m
+[32m+[m[32m    </div>[m
+[32m+[m[41m    [m
+[32m+[m[32m    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>[m
+[32m+[m[32m    <script src="index.js"></script>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/Web-Development/Practice/Basics/index.js b/Prateek/Web-Development/Practice/Basics/index.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1fbf7d0[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/Web-Development/Practice/Basics/index.js[m
+[36m@@ -0,0 +1,76 @@[m
+[32m+[m[32m// FIRST[m
+[32m+[m
+[32m+[m[32mlet initial = $("h2").text();[m
+[32m+[m[32m// add[m
+[32m+[m[32m$(".inc").on("click",function(){[m
+[32m+[m[32m    $("h2").text(++initial);[m
+[32m+[m[32m});[m
+[32m+[m[32m// subtract[m
+[32m+[m[32m$(".dec").on("click",function(){[m
+[32m+[m[32m    $("h2").text(--initial);[m
+[32m+[m[32m});[m
+[32m+[m[32m// reset[m
+[32m+[m[32m$(".reset").on("click",function(){[m
+[32m+[m[32m    $("h2").text(0);[m
+[32m+[m[32m    initial = 0;[m
+[32m+[m[32m});[m
+[32m+[m
+[32m+[m
+[32m+[m[32m// SECOND[m
+[32m+[m
+[32m+[m[32m$(".upper-case").on("click",function(){[m
+[32m+[m[32m    let convertable = $(".convert").text();[m
+[32m+[m[32m    convertable = convertable.toUpperCase();[m
+[32m+[m[32m    $(".convert").text(convertable);[m
+[32m+[m[32m    console.log("Done");[m
+[32m+[m[32m});[m
+[32m+[m[32m$(".lower-case").on("click",function(){[m
+[32m+[m[32m    let convertable = $(".convert").text();[m
+[32m+[m[32m    convertable = convertable.toLowerCase();[m
+[32m+[m[32m    $(".convert").text(convertable);[m
+[32m+[m[32m    console.log("Done");[m
+[32m+[m[32m});[m
+[32m+[m[32m$(".captilize").on("click",function(){[m
+[32m+[m[32m    let convertable = $(".convert").text();[m
+[32m+[m[32m    convertable = convertable.capitalise();[m
+[32m+[m[32m    $(".convert").text(convertable);[m
+[32m+[m[32m    console.log("Done");[m
+[32m+[m[32m});[m
+[32m+[m
+[32m+[m[32m// THIRD[m
+[32m+[m[32m$(".input-box").on("input",function(){[m
+[32m+[m[32m    let txt = $(this).val();[m
+[32m+[m[32m    if(txt.length>100){[m
+[32m+[m[32m        $(this).val(txt.slice(0,100));[m
+[32m+[m[32m        $(".letter-cnt").text("You have crossed your limit...");[m
+[32m+[m[32m        return;[m[41m [m
+[32m+[m[32m    }[m
+[32m+[m[32m    $(".letter-cnt").text(txt.length);[m
+[32m+[m[32m});[m
+[32m+[m
+[32m+[m
+[32m+[m[32m// FOURTH[m
+[32m+[m[32m$(".prev").on("click",function(){[m
+[32m+[m[32m    let imgNumber = $("img").attr("src");[m
+[32m+[m[32m    imgNumber = imgNumber.slice(9,10);[m
+[32m+[m[32m    if(imgNumber=="1"){[m
+[32m+[m[32m        imgNumber = "9";[m
+[32m+[m[32m    }[m
+[32m+[m[32m    else imgNumber = imgNumber-"1";[m
+[32m+[m[32m    $("img").attr("src","./Images/"+imgNumber+".png");[m
+[32m+[m[32m});[m
+[32m+[m
+[32m+[m[32m$(".next").on("click",function(){[m
+[32m+[m[32m    let imgNumber = $("img").attr("src");[m
+[32m+[m[32m    imgNumber = imgNumber.slice(9,10);[m
+[32m+[m[32m    imgNumber = Number(imgNumber);[m
+[32m+[m[32m    if(imgNumber==9){[m
+[32m+[m[32m        imgNumber = 1;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    else imgNumber = imgNumber+1;[m
+[32m+[m[32m    $("img").attr("src","./Images/"+imgNumber+".png");[m
+[32m+[m[32m});[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[1mdiff --git a/Prateek/Web-Development/Practice/Basics/styles.css b/Prateek/Web-Development/Practice/Basics/styles.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5706f73[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/Web-Development/Practice/Basics/styles.css[m
+[36m@@ -0,0 +1,72 @@[m
+[32m+[m[32m.main-container{[m
+[32m+[m[32m    display: grid;[m
+[32m+[m[32m    grid-template-rows: 1fr;[m
+[32m+[m[32m    grid-template-columns: 1fr 2fr 1fr 2fr ;[m
+[32m+[m[32m    gap: 3px;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32mbody{[m
+[32m+[m[32m    background-color: white;[m
+[32m+[m[32m}[m
+[32m+[m[32m.counter{[m
+[32m+[m[32m    color:black;[m
+[32m+[m[32m}[m
+[32m+[m[32m.cnt{[m
+[32m+[m[32m    border:2px solid black;[m
+[32m+[m[32m    /* width: 156px; */[m
+[32m+[m[32m}[m
+[32m+[m[32m.btn{[m
+[32m+[m[32m    cursor: pointer;[m
+[32m+[m[32m    padding: 3px;[m
+[32m+[m[32m    margin-bottom: 2px;[m
+[32m+[m[32m}[m
+[32m+[m[32m.btn:active{[m
+[32m+[m[32m    opacity: 0.5;[m
+[32m+[m[32m}[m
+[32m+[m[32mh3{[m
+[32m+[m[32m    display: inline-block;[m
+[32m+[m[32m    cursor: pointer;[m
+[32m+[m[32m    align-self: center;[m
+[32m+[m[32m}[m
+[32m+[m[32mh3:active{[m
+[32m+[m[32m    opacity: 0.5;[m
+[32m+[m[32m}[m
+[32m+[m[32m.btn-flex{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    justify-content:space-around;[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[32m+[m[32m/* SECOND */[m
+[32m+[m
+[32m+[m[32m.caseConverter{[m
+[32m+[m[32m    /* display: inline-block; */[m
+[32m+[m[32m    border:2px solid black;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.convert{[m
+[32m+[m[32m    padding:5px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/* THIRD */[m
+[32m+[m[32m.realTime-text{[m
+[32m+[m[32m    border:2px solid black;[m
+[32m+[m[32m}[m
+[32m+[m[32m.input-box{[m
+[32m+[m[32m    margin: 2px;[m
+[32m+[m[32m}[m
+[32m+[m[32m.letter-cnt{[m
+[32m+[m[32m    margin:2px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/* FOURTH */[m
+[32m+[m[32m.image-slider{[m
+[32m+[m[41m    [m
+[32m+[m[32m    border:2px solid black;[m
+[32m+[m[32m}[m
+[32m+[m[32mimg{[m
+[32m+[m[32m    height: 200px;[m
+[32m+[m[32m    width: 100%;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/Web-Development/Practice/To-Do-List/index.html b/Prateek/Web-Development/Practice/To-Do-List/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8bdc173[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/Web-Development/Practice/To-Do-List/index.html[m
+[36m@@ -0,0 +1,40 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <link rel="stylesheet" href="./styles.css">[m
+[32m+[m[32m    <title>To-Do</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <div class="top">[m
+[32m+[m[32m        <header><h1>My To-Do List</h1></header> <br><br>[m
+[32m+[m[41m    [m
+[32m+[m[32m        <div class="take-input">[m
+[32m+[m[32m            <input type="text" id="input" placeholder="Add new task" class="input" autofocus>[m
+[32m+[m[32m            <button class="btn add">Add</button>[m
+[32m+[m[32m        </div>[m
+[32m+[m[41m        [m
+[32m+[m[32m        <br><br><br><br>[m[41m [m
+[32m+[m[41m    [m
+[32m+[m[32m        <nav class="navbar">[m
+[32m+[m[32m            <span class="nav-btn">All</span>[m
+[32m+[m[32m            <span class="nav-btn">Active</span>[m
+[32m+[m[32m            <span class="nav-btn">Completed</span>[m
+[32m+[m[32m            <button class="clear">Clear All</button>[m
+[32m+[m[32m        </nav>[m
+[32m+[m[41m        [m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <br><br><br><br>[m
+[32m+[m[32m    <div class="task-area">[m
+[32m+[m[32m        <ul style="list-style: none;" class="list">[m
+[32m+[m[41m             [m
+[32m+[m[32m        </ul>[m
+[32m+[m[32m    </div>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>[m
+[32m+[m[32m    <script src="index.js"></script>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/Web-Development/Practice/To-Do-List/index.js b/Prateek/Web-Development/Practice/To-Do-List/index.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e45891c[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/Web-Development/Practice/To-Do-List/index.js[m
+[36m@@ -0,0 +1,43 @@[m
+[32m+[m[32mlet txt;[m
+[32m+[m[32m$(".input").on("input",function(){[m
+[32m+[m[32m    txt = $(".input").val();[m
+[32m+[m[32m});[m
+[32m+[m
+[32m+[m[32m$(".add").on("click",function(){[m
+[32m+[m[32m    if(txt!=undefined)[m
+[32m+[m[32m    addtask();[m
+[32m+[m[32m});[m
+[32m+[m
+[32m+[m[32m$("body").on("keypress",function(event){[m
+[32m+[m[41m    [m
+[32m+[m[32m    if(event.key==="Enter"&&txt!=undefined) addtask();[m
+[32m+[m[32m});[m
+[32m+[m
+[32m+[m[32mfunction addtask(){[m
+[32m+[m[32m    let listHtml = $(".list").html();[m
+[32m+[m[32m    listHtml += "<li> <input type= 'checkbox' class='done' > <span class='task' >" + txt+ "</span>  <button class='delete'>Delete</button> </li> <br>"[m
+[32m+[m[32m    $(".list").html(listHtml);[m
+[32m+[m[32m    $(".input").val("");[m
+[32m+[m[32m    txt=undefined;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m$("body").on("click",".delete",function(){[m
+[32m+[m[32m    $(this).closest("li").remove();[m
+[32m+[m[32m});[m
+[32m+[m
+[32m+[m
+[32m+[m[32m$("body").on("click",".done",function(event){[m
+[32m+[m[32m    const taskText = $(this).siblings(".task");[m
+[32m+[m[32m    if($(this).is(":checked")){[m
+[32m+[m[32m        taskText.css("text-decoration","line-through");[m
+[32m+[m[32m        $(".done").css("background-color","green");[m
+[32m+[m[32m    }[m
+[32m+[m[32m    else{[m
+[32m+[m[32m        taskText.css("text-decoration","none");[m
+[32m+[m[32m        $(".done").css("background-color","none");[m
+[32m+[m[32m    }[m
+[32m+[m[32m});[m
+[32m+[m
+[32m+[m[32m$(".clear").on("click",function(){[m
+[32m+[m[32m    $(".done").closest("li").remove();[m
+[32m+[m[32m});[m
+\ No newline at end of file[m
+[1mdiff --git a/Prateek/Web-Development/Practice/To-Do-List/styles.css b/Prateek/Web-Development/Practice/To-Do-List/styles.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..61ef2f6[m
+[1m--- /dev/null[m
+[1m+++ b/Prateek/Web-Development/Practice/To-Do-List/styles.css[m
+[36m@@ -0,0 +1,67 @@[m
+[32m+[m[32m*{[m
+[32m+[m[32m    padding: 0;[m
+[32m+[m[32m    border: 0;[m
+[32m+[m[32m    margin: 0;[m
+[32m+[m[32m}[m
+[32m+[m[32mbody{[m
+[32m+[m[32m    background-color: gray;[m
+[32m+[m[32m}[m
+[32m+[m[32m#input{[m
+[32m+[m[32m    background-color: whitesmoke;[m
+[32m+[m[32m    border-radius: 50px;[m
+[32m+[m[32m    border:0px;[m
+[32m+[m[32m    width: 40%;[m
+[32m+[m[32m    height: 20px;[m
+[32m+[m[32m    font-size: medium;[m
+[32m+[m[32m}[m
+[32m+[m[32m#input:focus{[m
+[32m+[m[32m    outline:0;[m
+[32m+[m[32m    border:1px solid black;[m
+[32m+[m[32m}[m
+[32m+[m[32mbutton{[m
+[32m+[m[32m    border-radius: 50px;[m
+[32m+[m[32m    border: 0px;[m
+[32m+[m[32m    cursor: pointer;[m
+[32m+[m[32m}[m
+[32m+[m[32mbutton:active{[m
+[32m+[m[32m    opacity: 0.5;[m
+[32m+[m[32m}[m
+[32m+[m[32m.navbar{[m
+[32m+[m[32m    display: inline-flex;[m
+[32m+[m[32m    justify-content: space-around;[m
+[32m+[m[32m    width: 50%;[m
+[32m+[m[32m}[m
+[32m+[m[32m.nav-btn{[m
+[32m+[m[32m    cursor: pointer;[m
+[32m+[m[32m}[m
+[32m+[m[32mheader{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    justify-content: center;[m
+[32m+[m[32m}[m
+[32m+[m[32m.take-input{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    justify-content: center;[m
+[32m+[m[32m}[m
+[32m+[m[32m.add{[m
+[32m+[m[32m    margin-left: 20px;[m
+[32m+[m[32m    width: 60px;[m
+[32m+[m[32m    height: 23px;[m
+[32m+[m[32m    padding-top: 2px;[m
+[32m+[m[32m}[m
+[32m+[m[32m.delete{[m
+[32m+[m[32m    width: 60px;[m
+[32m+[m[32m    height: 23px;[m
+[32m+[m[32m    padding: 2px 6px;[m
+[32m+[m[32m    padding-bottom: 1px;[m
+[32m+[m[32m    margin-left: 300px;[m
+[32m+[m[32m}[m
+[32m+[m[32m.clear{[m
+[32m+[m[32m    width: 70px;[m
+[32m+[m[32m    height: 23px;[m
+[32m+[m[32m    padding: 2px 6px;[m
+[32m+[m[32m    padding-bottom: 1px;[m
+[32m+[m[32m    padding-right: 5xp;[m
+[32m+[m[32m}[m
+[32m+[m[32m.task-area{[m
+[32m+[m[32m    margin-left: 80px;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
