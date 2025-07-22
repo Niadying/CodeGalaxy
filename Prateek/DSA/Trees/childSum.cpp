@@ -70,4 +70,5 @@ int main (){
     makeChildSum(root);
     if(checkChildSum(root)) cout<<"Satisfies the child-sum property...";
     else cout<<"Doesn't satisfies the child-sum property...";
+    cout<<endl;
 }

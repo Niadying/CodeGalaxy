@@ -26,18 +26,17 @@ int rHeight(TreeNode* root){
     return 1+right;
 }
 
-int cntNodes(TreeNode* root,int &ans){
+int cntNodes(TreeNode* root,ll &ans){
     if(!root)return 0;
     int left = lHeight(root);
     int right = rHeight(root);
     if(left!=right){
-        left = cntNodes(root->left,ans);
-        right = cntNodes(root->right,ans);
+        ans++;
+        cntNodes(root->left,ans);
+        cntNodes(root->right,ans); 
     }
-    else if (left==right){
-        ans+= (pow(2,left))-1;
-    }
-    else ans+= left+right;
+    if(left==right)
+    {ans+= pow(2,left)-1;return 0;}
 }
 
 int main (){
@@ -56,7 +55,9 @@ int main (){
     root->left->right->left = new TreeNode(10);
     root->left->right->right = new TreeNode(11);
 
-    int ans = 0;
+    root->left->left->left->left = new TreeNode(12);
+
+    ll ans = 0;
     cntNodes(root,ans);
-    cout<<ans<<endl;
+    cout<<ans<<endl;  
 }

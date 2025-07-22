@@ -23,7 +23,7 @@ pair<int,bool> traverse(TreeNode* root, bool &ans){
         ans = false;
         return {0,false};
     }
-    
+    return {max(l,r)+1, ans};
 }
 
 bool isBalanced(TreeNode* root){
@@ -45,6 +45,6 @@ int main (){
     root->right->right->right->right->right = new TreeNode(10);
     root->right->right->right->right->right->right = new TreeNode(10);
     root->right->right->right = new TreeNode(10);
-    if(isBalanced)cout<<"Balanced";
+    if(isBalanced(root))cout<<"Balanced";
     else cout<<"Not Balanced...";
 }
