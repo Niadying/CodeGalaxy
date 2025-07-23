@@ -2,6 +2,7 @@
 using namespace std;
 
 int BinarySearch(vector<int>nums,int key){
+    // TC -> O(log(N))
     int start = 0, end = nums.size() - 1;
     while(start<=end){
         int mid = start + (end - start)/2;
@@ -20,6 +21,7 @@ int BinarySearch(vector<int>nums,int key){
 
 
 int linearSearch(vector<int>nums, int key){
+    // TC -> O(N)
     int index = 0;
     for(auto i:nums){
         if(i==key) return index;
