@@ -58,7 +58,7 @@ void preorder(TreeNode *root){
             }
             if(prev->right == NULL){
                 prev->right = curr;
-                inorder.push_back(curr->data);
+                inorder.push_back(curr->data);       
                 curr = curr->left;
             }
             else{
@@ -69,20 +69,6 @@ void preorder(TreeNode *root){
     }
     for(auto i:inorder)cout<<i<<" ";
     cout<<endl;
-}
-
-void tempinorder(TreeNode* root){
-    if(!root)return;
-    tempinorder(root->left);
-    cout<<root->data<<" ";
-    tempinorder(root->right);
-}
-
-void temppreorder(TreeNode* root){
-    if(!root)return;
-    cout<<root->data<<" ";
-    temppreorder(root->left);
-    temppreorder(root->right);
 }
 
 int main (){
@@ -97,8 +83,6 @@ int main (){
     root->right->right->left = new TreeNode(9);
     root->right->right->right = new TreeNode(10);
     inorder(root);
-    tempinorder(root);
     cout<<endl;
     preorder(root);
-    temppreorder(root);
 }

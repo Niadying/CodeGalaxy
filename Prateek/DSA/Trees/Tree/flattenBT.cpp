@@ -13,8 +13,39 @@ class TreeNode{
         left=right=NULL;
     }
 };
+
+
  
 
+
+
+
+// MY APPROACH TC -> O(2N)
+
+void traverse(TreeNode* root, TreeNode* &dummyNode){
+    if(!root) return;
+    dummyNode->right = root;
+    TreeNode* right = root->right;
+    TreeNode* left = root->left;
+    dummyNode = dummyNode->right;
+    traverse(left, dummyNode);
+    traverse(right, dummyNode);
+}
+
+void doNull(TreeNode* root){
+    if(!root)return;
+    root->left = NULL;
+    doNull(root->right);
+}
+
+void flatten(TreeNode* root) {
+    TreeNode* dummy = new TreeNode(-101);
+    TreeNode* ans = dummy;
+    TreeNode* temp = ans;
+    traverse(root, dummy);
+    dummy = dummy->right;
+    doNull(root);
+}
 
 
 int main (){
