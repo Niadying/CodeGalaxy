@@ -13,9 +13,36 @@ class TreeNode{
         left=right=NULL;
     }
 };
+
+TreeNode* RM(TreeNode* root){
+    while(root->left)root = root->left;
+    return root;
+}
+
+TreeNode* helper(TreeNode* root){
+    if(!root->left)return root->right;
+    else if (!root->right)return root->left;
+    TreeNode* rightmost = RM(root->left);
+    TreeNode* right = root->right;
+    rightmost->right = right;
+    return root->left;
+}
  
 TreeNode* deleteNode(TreeNode* root, int key){
-    
+    TreeNode* ans = root;
+    if(!root)return root;
+    if(root->data == key)return helper(root);
+    while(root){
+        if(root->data > key){
+            if(root->left && root->left->data == key) root->left = helper(root->left);
+            else root = root->left;
+        }
+        else{
+            if(root->right && root->right->data == key)root->right = helper(root->right);
+            else root = root->right;
+        }
+    }
+    return ans;
 }
 
 int main (){
