@@ -9,6 +9,21 @@
 
 
     <body>
+        <p>To Do List</p>
+        
+        <input placeholder="To Do name" class=" js-name-input"  onkeydown=" if(event.key === 'Enter'){
+                    addtodo();
+                    }">
+
+        <input type="date">
+
+        <button
+        onclick="addtodo()"
+        >Add</button>
+
+
+        <div class="js-todolist" ></div>
+
         <script src="Scripts/to-do-list.js"></script>
 
     </body>
