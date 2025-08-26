@@ -1,0 +1,6 @@
+Day 0 -> Stock 1
+Day 1 -> Stock 1
+Day 2 -> Stock 2
+Day 3 -> Stock 3
+Day 4 -> Stock 5
+Day 5 -> Stock 8

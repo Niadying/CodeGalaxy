@@ -319,14 +319,14 @@
 // //     cout<<binarysearch(temp,0,6,target);
     
 // // }
-// #include<bits/stdc++.h>
-// using namespace std;
-// int main (){
-//     vector<int>nums{1,2,3,4,5,6,7,8,9,10};
-//     cout<<accumulate(nums.begin(),nums.end(),0);
-//     int a = lower_bound(nums.begin(),nums.end(),3)-nums.begin();
-//     cout<<"\n"<<a<<endl;
-//     int arr[]={1,2,3,4,5,6,7,8,9};
-//     int b = lower_bound(arr, arr+9,3)-arr;
-//     cout<<b<<endl;
-// }
+#include<bits/stdc++.h>
+using namespace std;
+int main (){
+    vector<int>nums{1,2,3,4,5,6,7,8,9,10};
+    cout<<accumulate(nums.begin(),nums.end(),0);
+    int a = lower_bound(nums.begin(),nums.end(),3)-nums.begin();
+    cout<<"\n"<<a<<endl;
+    int arr[]={1,2,3,4,5,6,7,8,9};
+    int b = lower_bound(arr, arr+9,3)-arr;
+    cout<<b<<endl;
+}

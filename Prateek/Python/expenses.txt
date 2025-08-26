@@ -1,0 +1,2 @@
+Daily Expenses: [200, 150, 300, 100, 250]
+Monthly Total: 1000

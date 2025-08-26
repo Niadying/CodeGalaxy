@@ -1,0 +1,5 @@
+Salary Slip
+Name: Nikhil
+Hours Worked: 30
+Rate: 100
+Total Salary: 3000

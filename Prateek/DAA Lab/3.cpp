@@ -6,6 +6,7 @@ int cntPairs (vector<int>nums,int key){
     // OPTIMAL TC O(N LOG(N))
     // WE SORT THE ARRAY AND THEN WE ITERATE THE ARRAY AND USING BINARY SEARCH WE FIND THE REQUIRED NUMBER IF IT EXISTS WE INCREASE CNT
     sort(nums.begin(),nums.end());
+    
     int cnt = 0;
     for(int i = 0; i<nums.size(); i++){
         int index = nums[i];
