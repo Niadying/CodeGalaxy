@@ -9,7 +9,7 @@ int main() {
     cin.tie(nullptr);
 
     int t;
-    if (!(cin >> t)) return 0;
+    if (!(cin >> t)) 
     
     while (t--){
         int n;

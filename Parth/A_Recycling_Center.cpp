@@ -24,7 +24,7 @@ while(!arr.empty()){
     // for(int i =0;i<arr.size();i++){
     //     if(arr[i]>c){
     //         var=i;
-        
+         
     // }
 
      auto it=upper_bound(arr.begin(),arr.end(),c);
@@ -35,7 +35,7 @@ while(!arr.empty()){
 
     }
     else{
-        arr.erase(it-1);
+        arr.erase(it-1); bjb j.
     }
 
     for(int i=0;i<arr.size();i++){
