@@ -96,18 +96,9 @@ node* sort012(node* head){
         }
         temp = temp->next;
     }
-    if(onehead->next!=NULL){
-        zero->next = onehead->next;
-    }
-    else{
-        if(twohead->next!=NULL){
-            zero->next = twohead->next;
-        }
-    }
-    if(twohead->next!=NULL)
-        one->next = twohead->next;
-
-
+    zero->next = onehead->next?onehead->next:twohead->next;
+    one->next = twohead->next;
+    two->next = NULL;
     return zerohead->next;
 }
 int main (){

@@ -1,0 +1,3 @@
+Prateek 40 200
+Parth 35 150
+Nikhil 30 100

@@ -1,0 +1,5 @@
+Salary Slip
+Name: Parth
+Hours Worked: 35
+Rate: 150
+Total Salary: 5250

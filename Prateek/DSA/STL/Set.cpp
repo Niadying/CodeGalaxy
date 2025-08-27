@@ -35,7 +35,7 @@ int main (){
     cout<<"Is 2 present or not -> "<<s.count(2)<<endl;
 
     set<int>:: iterator itr = s.find(312);
-
+    
     for(auto it = itr; it!= s.end(); it++){  // GOT A REFERNECE OF 312, ONLY VALUE FROM 312 WILL BE PRITNED..
         cout<<*it<<" ";
     }

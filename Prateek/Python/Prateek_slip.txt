@@ -1,0 +1,5 @@
+Salary Slip
+Name: Prateek
+Hours Worked: 40
+Rate: 200
+Total Salary: 8000
