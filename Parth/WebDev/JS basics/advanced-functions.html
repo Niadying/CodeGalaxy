@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>advanced fucntions</title>
+            <style>
+                
+            </style>
+
+
+
+    </head>
+    <body>
+        <button onclick=""    class="js-button">Click</button>
+        <script>
+
+            const buttonel= document.querySelector('.js-button');
+
+            buttonel.addEventListener('click', ()=> {
+                console.log('Click');
+            });
+
+            console.log([1,2,3].map((value,index) => {
+                return value+ 10;
+            }));
+
+
+            // setTimeout(function(){
+            //     console.log('timeout')
+            // }, 3000);
+
+            // console.log('123');
+
+            // setInterval(function(){
+            //     console.log('im parth');
+            // }, 5000)
+
+            // ['hi','bye','loveyou'].forEach(function(value){
+            //     console.log(value);
+            // });
+
+            // const oneparam = (param)=> {
+            //     console.log(param+1);
+            // }
+            // oneparam(2);
+
+            // const oneline=()=>{
+            //     return 2+3;
+            // }
+            //     console.log(oneline());
+
+            //     const obj2= {
+            //         method: ()=> {
+
+            //         }
+            //     };
+
+
+        </script>
+
+    </body>
+</html>
